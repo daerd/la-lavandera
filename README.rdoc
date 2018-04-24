@@ -1,0 +1,25 @@
+# La Lavandera
+
+Corporative website built for a laundry bussiness using Middleman, a static site generator written in Ruby.
+
+## Server
+
+```ruby
+middleman
+```
+
+http://localhost:4567
+
+## Documentation
+
+https://middlemanapp.com/basics/build-and-deploy/
+
+http://localhost:4567/__middleman
+
+## Deploy
+
+Coming soon...
+
+## Deploy
+
+Coming soon...
