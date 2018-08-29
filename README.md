@@ -5,7 +5,7 @@ Corporative website built for a laundry bussiness using Middleman, a static site
 ## Server
 
 ```ruby
-middleman
+bundle exec middleman
 ```
 
 http://localhost:4567
@@ -15,10 +15,6 @@ http://localhost:4567
 https://middlemanapp.com/basics/build-and-deploy/
 
 http://localhost:4567/__middleman
-
-## Deploy
-
-Coming soon...
 
 ## Deploy
 
