@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <%= favicon_tag 'images/favicon.ico' %>
+    <title><%= current_page.data.title %></title>
+    <%= javascript_include_tag 'site' %>
+    <%= stylesheet_link_tag 'external/bootstrap/bootstrap.min' %>
+    <%= stylesheet_link_tag 'fonts' %>
+    <%= stylesheet_link_tag 'external/animate/animate.min' %>
+    <%= stylesheet_link_tag 'external/slick/slick' %>
+    <%= stylesheet_link_tag 'external/slick/slick-theme' %>
+    <%= stylesheet_link_tag 'external/bootstrap-datetimepicker/bootstrap-datetimepicker' %>
+    <%= stylesheet_link_tag 'site' %>
+    <%= stylesheet_link_tag 'external/revolution/settings' %>
+    <%= stylesheet_link_tag 'external/revolution/layers' %>
+    <%= stylesheet_link_tag 'external/revolution/navigation' %>
+    <%= yield_content :css_tags %>
+  </head>
+
+  <body>
+    <%= partial 'pages/shared/header' %>
+
+    <%= yield %>
+
+    <%= partial 'pages/shared/footer' %>
+  </body>
+
+  <%= yield_content :js_tags %>
+</html>

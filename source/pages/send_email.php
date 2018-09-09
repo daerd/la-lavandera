@@ -1,0 +1,14 @@
+<?php
+	$to                    = $contact_email;
+	$from                  = $_REQUEST['phone_email'];
+	$name                  = $_REQUEST['name'];
+	$headers               = "From: $from";
+	$subject               = "[CONTACTO WEB] Tienes un nuevo mensaje";
+	$fields                = array();
+	$fields{"name"}        = "Nombre";
+	$fields{"phone_email"} = "Teléfono / Email";
+	$fields{"message"}     = "Comentario";
+	$body                  = "";
+	  foreach($fields as $a => $b){ $body .= sprintf("%20s:%s\n",$b,$_REQUEST[$a]); }
+	$send                  = mail($to, $subject, $body, $headers);
+?>

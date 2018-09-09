@@ -1,0 +1,118 @@
+<div class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li><a href="index.php">Inicio</a></li>
+				<li>Contact Us</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="page-content">
+	<div class="container">
+		<h1 class="title-underline">Contact Us</h1>
+		<div class="row">
+			<div class="col-sm-5 col-md-4 col-lg-4">
+				<p class="text-right">
+					Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+				</p>
+			</div>
+			<div class="col-sm-7 col-md-8 col-lg-7 col-lg-offset-1">
+				<!-- form-block -->
+				<form id="contact-form" class="boxed-form" name="contact-form" method="post" novalidate="novalidate">
+					<div id="success">
+						<p>Your message was sent successfully!</p>
+					</div>
+					<div id="error">
+						<p>Something went wrong, try refreshing and submitting the form again.</p>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-lg-6">
+							<div class="form-group">
+								<label class="control-label">Nombre</label>
+								<input class="form-control" type="text" value="" name="name">
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6">
+							<div class="form-group">
+								<label class="control-label">Teléfono / Email</label>
+								<input class="form-control" type="text" value="" name="phone_email">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label">Comentario</label>
+						<textarea class="form-control" rows="10" name="message"></textarea>
+					</div>
+					<button class="btn btn-default btn-top" type="submit" id="submit">ENVIAR</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid content">
+		<div id="map"></div>
+	</div>
+</div>
+
+<% content_for :js_tags do %>
+	<!--[if lt IE 9]>
+		<%= javascript_include_tag 'js/html5shiv' %>
+		<%= javascript_include_tag 'js/respond.min' %>
+	<![endif]-->
+	<%= javascript_include_tag 'external/jquery/jquery.min' %>
+	<%= javascript_include_tag 'external/bootstrap/bootstrap.min' %>
+	<%= javascript_include_tag 'external/slick/slick.min' %>
+	<%= javascript_include_tag 'external/waypoints/jquery.waypoints.min' %>
+	<%= javascript_include_tag 'external/countto/jquery.countTo' %>
+	<%= javascript_include_tag 'external/bootstrap-datetimepicker/moment.min' %>
+	<%= javascript_include_tag 'external/bootstrap-datetimepicker/bootstrap-datetimepicker.min' %>
+	<%= javascript_include_tag 'external/form/jquery.form' %>
+	<%= javascript_include_tag 'external/form/jquery.validate.min' %>
+	<%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBesw263ius7OmFcr2A9w4FO7uK5xhQbgY' %>
+	<%= javascript_include_tag 'site' %>
+
+	<script type="text/javascript">
+		// validate contact form
+		$(function () {
+			$('#contact-form').validate({
+				rules: {
+					name: {
+						required: true,
+						minlength: 2
+					},
+					phone_email: {
+						required: true
+					},
+				},
+				messages: {
+					name: {
+						required: "Por favor, introduce tu nombre.",
+						minlength: "Tu nombre debe tener al menos 2 caracteres."
+					},
+					phone_email: {
+						required: "Por favor, introduce tu teléfono o email."
+					}
+				},
+				submitHandler: function (form) {
+					$(form).ajaxSubmit({
+						type: "POST",
+						data: $(form).serialize(),
+						url: "send_email.php",
+						success: function () {
+							$('#success').fadeIn();
+							$('#contact-form').each(function () {
+								this.reset();
+							});
+						},
+						error: function () {
+							$('#contact-form').fadeTo("slow", 0, function () {
+								$('#error').fadeIn();
+							});
+						}
+					});
+				}
+			});
+		});
+	</script>
+<% end %>

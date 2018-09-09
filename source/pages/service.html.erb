@@ -1,0 +1,109 @@
+<div class="breadcrumb">
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li><a href="index.php">Inicio</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li>Laundry Service</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="page-content">
+	<div class="container">
+		<h1 class="title-underline h-sm">Laundry Service</h1>
+	</div>
+	<div class="two-columns">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-lg-3">
+					<ul class="category-list-aside">
+						<li class="active"><a href="service-page-1.html">Laundry Service</a></li>
+						<li><a href="service-page-2.html">Dry Cleaning</a></li>
+						<li><a href="service-page-3.html">Leather & Suede Cleaning</a></li>
+						<li><a href="service-page-4.html">Wedding Gown Cleaning & Preservation</a></li>
+						<li><a href="service-page-5.html">Tailoring & Alterations</a></li>
+						<li><a href="service-page-6.html">Pillow Refurbishing</a></li>
+						<li><a href="service-page-7.html">Linen, Upholstery, & Area Rug Cleaning</a></li>
+					</ul>
+					<div class="contact-box">
+						<div class="contact-box-row">
+							<i class="icon-map-pointer"></i>
+							<div class="contact-box-row-title"><b>Our address:</b></div>
+							<div>5604 Willow Crossing Ct, Clifton, VA, 20124</div>
+						</div>
+						<div class="contact-box-row">
+							<i class="icon-telephone"></i>
+							<div class="contact-box-row-title"><b>Call us:</b></div>
+							<div>+1-800-123-45-67</div>
+						</div>
+						<div class="contact-box-row">
+							<i class="icon-clock"></i>
+							<div class="contact-box-row-title"><b>Work Time:</b></div>
+							<div>Mon-Fri: 9:00am – 5:00pm
+								<br>Sat-Sun: 11:00am - 16:00pm</div>
+						</div>
+					</div>
+				</div>
+				<div class="divider-lg visible-xs"></div>
+				<div class="col-md-8 col-lg-9">
+					<div><%= image_tag "img-service-1.jpg" "class" => "img-responsive" %></div>
+					<div class="divider divider-47"></div>
+					<p>When you use our professional wash and fold services, you can be sure that your clothes will be well taken care of because we have served our customers in USA for over 80 years and we understand your needs. Unlike other lesser quality cleaners, our full service laundry employs eco-friendly methods and we treat your laundry with great care:</p>
+					<ul class="marker-list">
+						<li>All our products are chlorine-free. We use free and clear bleach for whites. We use custom detergent, an in-wash detergent booster (more CLEANING POWER) and downy fabric softener, free and clear dryer sheets.</li>
+						<li>We sort your laundry by color before washing: dark with darks, light with lights.</li>
+						<li>We use a delicate wash. We wash darks in cold water. We wash whites in hot/warm water to brighten the fabric and clean stains better. We dry all clothes in low/medium heat. Your clean laundry is then professional folded.</li>
+						<li>If you have special instructions, please write on your order.</li>
+					</ul>
+					<p>To help save the environment, we use reusable laundry bags for our pickup and delivery service. </p>
+					<div class="table-title">LAUNDRAY SERVICE</div>
+					<div class="table-row">
+						<div class="pull-left">5 Shirts On Hanger </div>
+						<div class="pull-right">$10.00</div>
+					</div>
+					<div class="table-row">
+						<div class="pull-left">20 Shirts @ 1.80</div>
+						<div class="pull-right">$36.00</div>
+					</div>
+					<div class="table-row">
+						<div class="pull-left">5 Shirts Wash & Fold</div>
+						<div class="pull-right">$13.00</div>
+					</div>
+					<div class="table-row">
+						<div class="pull-left">Hung Shirt</div>
+						<div class="pull-right">$2.49</div>
+					</div>
+					<div class="table-row">
+						<div class="pull-left">Hung T Shirt</div>
+						<div class="pull-right">$2.49</div>
+					</div>
+					<div class="table-row">
+						<div class="pull-left">Folded Shirt</div>
+						<div class="pull-right">$2.99</div>
+					</div>
+					<div class="divider divider-47"></div>
+					<div class="text-center"><a href="#" class="btn btn-default btn-green btn-lg"><i class="icon-video"></i>Order Service Now</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% content_for :js_tags do %>
+	<!--[if lt IE 9]>
+		<%= javascript_include_tag 'js/html5shiv' %>
+		<%= javascript_include_tag 'js/respond.min' %>
+	<![endif]-->
+	<%= javascript_include_tag 'external/jquery/jquery.min' %>
+	<%= javascript_include_tag 'external/bootstrap/bootstrap.min' %>
+	<%= javascript_include_tag 'external/slick/slick.min' %>
+	<%= javascript_include_tag 'external/waypoints/jquery.waypoints.min' %>
+	<%= javascript_include_tag 'external/countto/jquery.countTo' %>
+	<%= javascript_include_tag 'external/bootstrap-datetimepicker/moment.min' %>
+	<%= javascript_include_tag 'external/bootstrap-datetimepicker/bootstrap-datetimepicker.min' %>
+	<%= javascript_include_tag 'external/form/jquery.form' %>
+	<%= javascript_include_tag 'external/form/jquery.validate.min' %>
+	<%= javascript_include_tag 'site' %>
+<% end %>

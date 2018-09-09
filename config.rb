@@ -1,11 +1,19 @@
-activate :autoprefixer do |prefix|
-  prefix.browsers = 'last 2 versions'
+config[:layout] = 'site'
+
+configure :development do
+  activate :livereload
+
+  config[:debug_assets]          = true
+  config[:livereload_css_target] = nil
 end
 
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :livereload
+end
+
+activate :autoprefixer do |prefix|
+  prefix.browsers = 'last 2 versions'
 end
 
 activate :deploy do |deploy|
