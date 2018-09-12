@@ -1889,66 +1889,6 @@ header .box-location:before {
   box-shadow: inset 0 0 0 20px rgba(255,255,255,0.4),0 1px 2px rgba(0,0,0,0.1);
 }
 
-.services-box-info-carousel {
-  margin-bottom: 90px;
-  margin-top: -15px;
-}
-
-.services-box-info-carousel .services-box-info {
-  margin-top: 75px;
-}
-
-.services-box-info-carousel .slick-dots li:not(.slick-active) button::before {
-  color: #dedede;
-}
-
-.services-box-info-carousel .slick-dots {
-  bottom: -60px;
-}
-
-.services-box-info-carousel .slick-next, .services-box-info-carousel .slick-prev {
-  height: 36px;
-  width: 36px;
-}
-
-.services-box-info-carousel .slick-prev {
-  left: -50px;
-}
-
-.services-box-info-carousel .slick-next {
-  right: -50px;
-}
-
-@media only screen and (max-width:1400px) {
-  .services-box-info-carousel .slick-prev {
-    left: -30px;
-  }
-
-  .services-box-info-carousel .slick-next {
-    right: -30px;
-  }
-}
-
-.services-box-info-carousel .slick-prev:before, .services-box-info-carousel .slick-next:before {
-  color: #000;
-  font-family: 'laundry';
-  font-size: 36px;
-  line-height: 1;
-  opacity: .7;
-}
-
-.services-box-info-carousel .slick-prev:hover:before, .services-box-info-carousel .slick-next:hover:before {
-  opacity: 1;
-}
-
-.services-box-info-carousel .slick-prev:before {
-  content: '\e92a';
-}
-
-.services-box-info-carousel .slick-next:before {
-  content: '\e92b';
-}
-
 .product-box-mobile .slick-dots {
   bottom: -10px;
 }

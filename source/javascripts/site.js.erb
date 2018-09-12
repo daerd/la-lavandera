@@ -11,10 +11,8 @@ var $document = $(document),
     panel:               $('.panel'),
     menu:                $('nav .menu'),
     footerBubble:        $('.bubbleContainer'),
-    counter:             $('#counterBlock'),
     animation:           $('.animation'),
     servicesCarousel:    $('.services-box-mobile'),
-    servicesBoxCarousel: $('.services-box-info-carousel'),
     permissionCarousel:  $('.permission-box-mobile'),
     blogCarousel:        $('.carousel-blog'),
     productCarousel:     $('.product-box-mobile'),
@@ -78,22 +76,6 @@ $document.ready(function () {
 
   if (plugins.footerBubble.length > 0) {
     footerBubbleAnim(10); // 10 - number of bubbles (20 - max)
-  }
-
-  // counter
-  function count(options) {
-    var $this = $(this);
-    options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-    $this.countTo(options);
-  }
-  if (plugins.counter.length) {
-    plugins.counter.waypoint(function () {
-      $('.title > span', plugins.counter).each(count);
-      this.destroy();
-    }, {
-      triggerOnce: true,
-      offset: '80%'
-    });
   }
 
   // sticky header
@@ -265,37 +247,6 @@ $document.ready(function () {
         settings: {
           arrows: false,
           slidesToShow: 1
-        }
-      }]
-    });
-  };
-
-  // servicesBox carousel
-  if (plugins.servicesBoxCarousel.length) {
-    plugins.servicesBoxCarousel.slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots: true,
-      infinite: true,
-      responsive: [{
-        breakpoint: 1350,
-        settings: {
-          arrows: false
-        }
-      },{
-        breakpoint: 991,
-        settings: {
-          arrows: false,
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 667,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-          slidesToScroll: 1
         }
       }]
     });
