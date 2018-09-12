@@ -12,31 +12,38 @@
         <!-- box-telephone -->
         <div class="box-telephone ">
           <address>
-            <span class="icon icon-telephone"></span>91 408 18 64
+            <span class="icon icon-telephone"></span><%= t('global.phone') %>
           </address>
-          <div class="time hidden-sm hidden-xs">Lun-Vie 9:30-13:30 & 17:00-20:00<br>Sáb. 9:30-14:00</div>
+          <div class="time hidden-sm hidden-xs">
+            <%= t('global.schedule.line_1') %><br />
+            <%= t('global.schedule.line_2') %>
+          </div>
         </div>
         <!-- /box-telephone -->
       </div>
       <div class="col-sm-12 col-md-4 col-lg-4 hidden-sm hidden-xs">
         <!-- box-location -->
         <address class="box-location">
-          Calle de Ascao 3<br> 28017 Madrid
+          <%= t('global.address.line_1') %><br />
+          <%= t('global.address.line_2') %>
         </address>
         <!-- /box-location -->
       </div>
       <div class="col-sm-12 col-md-4 col-lg-4 text-center">
         <!-- logo -->
-        <a class="logo" title="Laundry & Dry Cleaning" href="/index.php"><%= image_tag "logo.png", "class" => "img-responsive", "alt" => "Laundry & Dry Cleaning" %></a>
+        <a class="logo" title="<%= t('global.name') %>" href="/index.php"><%= image_tag "logo.png", "class" => "img-responsive", "alt" => t('global.name') %></a>
         <!-- /logo -->
       </div>
       <div class="col-sm-12 col-md-4 col-lg-4 hidden-sm hidden-xs">
         <!-- box-telephone -->
         <div class="box-telephone ">
           <address>
-            91 408 18 64
+            <%= t('global.phone') %>
           </address>
-          <div class="time hidden-sm">Lun-Vie 9:30-13:30 & 17:00-20:00<br>Sáb. 9:30-13:30</div>
+          <div class="time hidden-sm">
+            <%= t('global.schedule.line_1') %><br />
+            <%= t('global.schedule.line_2') %>
+          </div>
         </div>
         <!-- /box-telephone -->
       </div>
@@ -67,7 +74,7 @@
               <li><a href="/pages/prices.php">Precios</a></li>
               <li><a href="/pages/faq.php">Preguntas frecuentes</a></li>
               <li><a href="/pages/contact.php">Contacta con nosotros</a></li>
-              <li><a href="https://www.facebook.com/lalavanderamadrid/" target="_blank">Ofertas</a></li>
+              <li><a href="<%= t('global.facebook_page') %>" target="_blank">Ofertas FB</a></li>
             </ul>
           </nav>
         </div>

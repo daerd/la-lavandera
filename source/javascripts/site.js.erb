@@ -378,7 +378,7 @@ $document.ready(function () {
       var map = new google.maps.Map(mapElement, mapOptions);
 
       var infowindow = new google.maps.InfoWindow({
-        content: 'La lavandera'
+        content: "<strong><%= t('global.name') %></strong><br /><%= t('global.address.line_1') %><br /><%= t('global.address.line_2') %><br /><br /><span class='icon icon-telephone'></span> <%= t('global.phone') %><br /><br /><span class='icon icon-clock'></span> <%= t('global.schedule.line_1') %><br /><span class='icon icon-clock'></span> <%= t('global.schedule.line_2') %>"
       });
 
       var marker = new google.maps.Marker({

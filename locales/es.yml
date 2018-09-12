@@ -1,0 +1,16 @@
+es:
+
+  global:
+    name: Tintorería La Lavandera
+    address:
+      line_1: Calle de Ascao 3
+      line_2: 28017 Madrid
+    phone: 91 408 18 64
+    schedule:
+      line_1: Lun-Vie 9:30-13:30 & 17:00-20:00
+      line_2: Sáb. 9:30-13:30
+    facebook_page:  https://www.facebook.com/lalavanderamadrid
+    instagram_page: https://www.instagram.com/lalavanderamadrid
+
+  layout:
+    title: Tintorería La Lavandera
