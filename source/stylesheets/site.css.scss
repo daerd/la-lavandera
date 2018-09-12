@@ -3022,18 +3022,18 @@ form label.error {
   }
 }
 
-#modalorder h2 {
+#modalOrder h2 {
   margin-bottom: 40px;
   padding-bottom: 0;
 }
 
 @media (max-width:767px) {
-  #modalorder h2 {
+  #modalOrder h2 {
     margin-bottom: 25px;
   }
 }
 
-#modalorder .btn {
+#modalOrder .btn {
   margin-top: 15px;
 }
 
@@ -4856,7 +4856,7 @@ div[class^="bubble-"] {
   -webkit-animation: bubble-movement 3s infinite ease-in -4.18s;
 }
 
-.bubblecontainer {
+.bubbleContainer {
   height: 100%;
   left: 0;
   overflow: hidden;
