@@ -2,26 +2,25 @@ var $ = jQuery.noConflict();
 
 /* Global variables */
 
-"use strict";
 var $document = $(document),
   $window = $(window),
   plugins = {
-    bgimage: $('[data-image]'),
-    googleMap: $('#map'),
-    preloader: $('.loader'),
-    panel: $('.panel'),
-    menu: $('nav .menu'),
-    footerBubble: $('.bubbleContainer'),
-    counter: $('#counterBlock'),
-    animation: $('.animation'),
-    servicesCarousel: $('.services-box-mobile'),
+    bgimage:             $('[data-image]'),
+    googleMap:           $('#map'),
+    preloader:           $('.loader'),
+    panel:               $('.panel'),
+    menu:                $('nav .menu'),
+    footerBubble:        $('.bubbleContainer'),
+    counter:             $('#counterBlock'),
+    animation:           $('.animation'),
+    servicesCarousel:    $('.services-box-mobile'),
     servicesBoxCarousel: $('.services-box-info-carousel'),
-    permissionCarousel: $('.permission-box-mobile'),
-    blogCarousel: $('.carousel-blog'),
-    productCarousel: $('.product-box-mobile'),
-    postCarousel: $('.post-carousel'),
-    postGallery: $('.blog-isotope'),
-    stickyHeader: true
+    permissionCarousel:  $('.permission-box-mobile'),
+    blogCarousel:        $('.carousel-blog'),
+    productCarousel:     $('.product-box-mobile'),
+    postCarousel:        $('.post-carousel'),
+    postGallery:         $('.blog-isotope'),
+    stickyHeader:        true
   }
 
 /* Initialize All Scripts */
@@ -76,6 +75,7 @@ $document.ready(function () {
       plugins.footerBubble.append(bubble);
     }
   }
+
   if (plugins.footerBubble.length > 0) {
     footerBubbleAnim(10); // 10 - number of bubbles (20 - max)
   }
@@ -98,7 +98,6 @@ $document.ready(function () {
 
   // sticky header
   $.fn.stickyHeader = function () {
-
     var $header = this,
       $body = $('body'),
       headerOffset;
@@ -327,36 +326,6 @@ $document.ready(function () {
       slickMobile(plugins.permissionCarousel);
     }
   };
-
-  // Order Form
-  if ($('.datetimepicker').length) {
-    $('.datetimepicker').datetimepicker({
-      format: 'DD/MM/YYYY',
-      icons: {
-        time: 'icon icon-clock',
-        date: 'icon icon-calendar',
-        up: 'icon icon-angle-up',
-        down: 'icon icon-angle-down',
-        previous: 'icon icon-left-arrow',
-        next: 'icon icon-right-arrow',
-        today: 'icon icon-today',
-        clear: 'icon icon-trash',
-        close: 'icon icon-cancel-music'
-      }
-    });
-  }
-  if ($('.timepicker').length) {
-    $('.timepicker').datetimepicker({
-      format: 'LT',
-      icons: {
-        time: 'icon icon-clock',
-        up: 'icon icon-angle-up',
-        down: 'icon icon-angle-down',
-        previous: 'icon icon-left-arrow',
-        next: 'icon icon-right-arrow'
-      }
-    });
-  }
 
   $window.on('load', function () {
     // remove preloader on page load

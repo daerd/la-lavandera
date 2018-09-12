@@ -3037,38 +3037,6 @@ form label.error {
   margin-top: 15px;
 }
 
-.datetimepicker-wrap {
-  position: relative;
-}
-
-.datetimepicker-wrap:before {
-  color: #999;
-  content: "\e93a";
-  display: block;
-  font-family: 'laundry';
-  font-size: 18px;
-  line-height: 27px;
-  position: absolute;
-  right: 11px;
-  top: 7px;
-}
-
-.timepicker-wrap {
-  position: relative;
-}
-
-.timepicker-wrap:before {
-  color: #999;
-  content: "\e907";
-  display: block;
-  font-family: 'laundry';
-  font-size: 18px;
-  line-height: 27px;
-  position: absolute;
-  right: 11px;
-  top: 7px;
-}
-
 @-moz-keyframes borderscale {
   50% {
     box-shadow: 0 0 0 2px #999;
