@@ -556,7 +556,7 @@
   <%= javascript_include_tag 'site' %>
   <%= javascript_include_tag 'external/form/jquery.form' %>
   <%= javascript_include_tag 'external/form/jquery.validate.min' %>
-  <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBesw263ius7OmFcr2A9w4FO7uK5xhQbgY' %>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{config[:gmaps_api_key]}" %>
   <%= javascript_include_tag 'external/revolution/jquery.themepunch.tools.min' %>
   <%= javascript_include_tag 'external/revolution/jquery.themepunch.revolution.min' %>
   <%= javascript_include_tag 'external/revolution/extensions/revolution.extension.actions.min' %>

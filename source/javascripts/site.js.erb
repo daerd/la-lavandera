@@ -364,48 +364,41 @@ $document.ready(function () {
       plugins.preloader.delay(500).fadeOut('slow');
     }
 
-    function createMap(id, mapZoom) {
-      // Create google map
-      // Basic options for a simple Google Map
-      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    function createMap() {
+      var gmapsPosition = new google.maps.LatLng(<%= config[:gmaps_lat] %>,<%= config[:gmaps_lng].to_f %>);
+
       var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: mapZoom,
+        zoom:        <%= config[:gmaps_zoom] %>,
         scrollwheel: false,
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.4298991,-3.643181)
+        center:      gmapsPosition
       };
 
-// TODO: Estooo
-        // var infowindow = new google.maps.InfoWindow({
-        //   content: contentString
-        // });
+      var mapElement = document.getElementById('map');
 
-        // var marker = new google.maps.Marker({
-        //   position: uluru,
-        //   map: map,
-        //   title: 'Uluru (Ayers Rock)'
-        // });
-        // marker.addListener('click', function() {
-        //   infowindow.open(map, marker);
-        // });
-
-
-      // Get the HTML DOM element that will contain your map
-      // We are using a div with id="map" seen below in the <body>
-      var mapElement = document.getElementById(id);
-      // Create the Google Map using our element and options defined above
       var map = new google.maps.Map(mapElement, mapOptions);
-      // Let's also add a marker while we're at it
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.4298991,-3.643181),
-        map: map,
-        // TODO: globo con direccion aquí, coords arriba
+
+      var infowindow = new google.maps.InfoWindow({
+        content: 'La lavandera'
       });
 
+      var marker = new google.maps.Marker({
+        position: gmapsPosition,
+        map:      map
+      });
+
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+
+      google.maps.event.addListenerOnce(map, 'tilesloaded', function() {
+        infowindow.open(map, marker);
+      });
+
+      infowindow.open(map,marker);
     }
+
     if (plugins.googleMap.length) {
-      createMap('map', 11)
+      createMap();
     }
   });
 
@@ -422,5 +415,4 @@ $document.ready(function () {
       onScrollInit(plugins.animation, windowWidth);
     }, 500);
   });
-
 });

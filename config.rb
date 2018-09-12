@@ -1,4 +1,8 @@
-config[:layout] = 'site'
+config[:layout]        = 'site'
+config[:gmaps_api_key] = 'gmaps_api_key'
+config[:gmaps_lat]     = '40.4298991'
+config[:gmaps_lng]     = '-3.643181'
+config[:gmaps_zoom]    = '14'
 
 configure :development do
   activate :livereload
@@ -24,3 +28,4 @@ activate :deploy do |deploy|
   deploy.password      = ENV['PASS']
   deploy.build_before  = true
 end
+
