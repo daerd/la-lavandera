@@ -1,0 +1,46 @@
+<div class="loader">
+  <div class="loader-wrapper">
+    <div class="bubble1"></div>
+    <div class="bubble2"></div>
+  </div>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 visible-sm visible-xs">
+        <div class="box-telephone ">
+          <address>
+            <span class="icon icon-telephone"></span><%= t('global.phone') %>
+          </address>
+          <div class="time hidden-sm hidden-xs">
+            <%= t('global.schedule.line_1') %><br />
+            <%= t('global.schedule.line_2') %>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 hidden-sm hidden-xs">
+        <address class="box-location">
+          <%= t('global.address.line_1') %><br />
+          <%= t('global.address.line_2') %>
+        </address>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+        <a class="logo" title="<%= t('global.name') %>" href="/index.html"><%= image_tag "logo.png", "class" => "img-responsive", "alt" => t('global.name') %></a>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 hidden-sm hidden-xs">
+        <div class="box-telephone ">
+          <address>
+            <%= t('global.phone') %>
+          </address>
+          <div class="time hidden-sm">
+            <%= t('global.schedule.line_1') %><br />
+            <%= t('global.schedule.line_2') %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= partial 'shared/navigation' %>
+</header>
