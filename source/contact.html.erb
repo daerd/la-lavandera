@@ -19,9 +19,11 @@ breadcrumbs:
 					<div id="success">
 						<p>Your message was sent successfully!</p>
 					</div>
+
 					<div id="error">
 						<p>Something went wrong, try refreshing and submitting the form again.</p>
 					</div>
+
 					<div class="row">
 						<div class="col-md-12 col-lg-6">
 							<div class="form-group">
@@ -77,6 +79,9 @@ breadcrumbs:
 					phone_email: {
 						required: true
 					},
+					message: {
+						required: true
+					}
 				},
 				messages: {
 					name: {
@@ -85,6 +90,9 @@ breadcrumbs:
 					},
 					phone_email: {
 						required: "Por favor, introduce tu teléfono o email."
+					},
+					message: {
+						required: "Por favor, el mensaje."
 					}
 				},
 				submitHandler: function (form) {

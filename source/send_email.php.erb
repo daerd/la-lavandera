@@ -1,5 +1,5 @@
 <?php
-	$to                    = $contact_email;
+	$to                    = '<%= config[:contact_email] %>';
 	$from                  = $_REQUEST['phone_email'];
 	$name                  = $_REQUEST['name'];
 	$headers               = "From: $from";

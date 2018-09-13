@@ -105,6 +105,10 @@ config[:navigation].select{ |x| x[:key] == 'services' }.first[:items].map{ |x| x
   proxy "/#{service.gsub('_', '-')}.html", '/service.html', locals: { service: service }
 end
 
+# Contact
+page 'send_email.php', layout: false
+config[:contact_email] = 'lalavanderacb@gmail.com'
+
 # Google Maps
 config[:gmaps_api_key] = 'gmaps_api_key'
 config[:gmaps_lat]     = '40.4298498'
