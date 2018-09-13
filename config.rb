@@ -28,6 +28,23 @@ activate :deploy do |deploy|
   deploy.build_before  = true
 end
 
+activate :imageoptim do |options|
+  options.manifest             = true # Use a build manifest to prevent re-compressing images between builds.
+  options.skip_missing_workers = true # Silence problematic "image_optim" workers.
+  options.verbose              = false # Causes "image_optim" to be in shouty-mode.
+  options.nice                 = true # Setting "nice" and "threads" to true or nil will let options determine them.
+  options.threads              = true
+  options.image_extensions     = %w(.png .jpg .gif .svg) # Image extensions to attempt to compress.
+  options.advpng               = { level: 4 }
+  options.gifsicle             = { interlace: false }
+  options.jpegoptim            = { strip: [ 'all' ], max_quality: 100 }
+  options.jpegtran             = { copy_chunks: false, progressive: true, jpegrescan: true }
+  options.optipng              = { level: 6, interlace: false }
+  options.pngcrush             = { chunks: [ 'all' ], fix: false, brute: false }
+  options.pngout               = { copy_chunks: false, strategy: 0 }
+  options.svgo                 = {}
+end
+
 activate :i18n,        mount_at_root: :es
 activate :asset_hash
 activate :minify_html
