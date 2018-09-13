@@ -102,7 +102,7 @@ config[:navigation] = [
 
 # Services
 config[:navigation].select{ |x| x[:key] == 'services' }.first[:items].map{ |x| x[:key] }.each do |service|
-  proxy "/#{service.gsub('_', '-')}.html", '/service.html', locals: { service: service }
+  proxy "/#{service.gsub('_', '-')}.html", '/service.html', locals: { service: service }, ignore: true
 end
 
 # Contact
