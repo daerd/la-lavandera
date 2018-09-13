@@ -28,8 +28,9 @@ activate :deploy do |deploy|
   deploy.build_before  = true
 end
 
-activate :i18n,       mount_at_root: :es
+activate :i18n,        mount_at_root: :es
 activate :asset_hash
+activate :minify_html
 
 ################
 # PAGES CONFIG #
