@@ -9,11 +9,11 @@
           <ul class="menu">
             <% config[:navigation].each do |nav_element| %>
               <li>
-                <a href="<%= nav_element[:link] %>"<%= ' class="active"' if nav_element[:link] == current_page.url || (nav_element[:items].present? && nav_element[:items].select{ |x| x[:link] == current_page.url }.present?) %>><%= t(nav_element[:text]) %></a>
+                <a href="<%= nav_element[:link] %>"<%= ' class="active"' if nav_element_active?(nav_element) %>><%= t(nav_element[:text]) %></a>
                 <% if nav_element[:items].present? %>
                   <ul>
                     <% nav_element[:items].each do |nav_sub_element| %>
-                      <li><a href="<%= nav_sub_element[:link] %>"<%= ' class="active"' if nav_sub_element[:link] == current_page.url %>><%= t(nav_sub_element[:text]) %></a></li>
+                      <li><a href="<%= nav_sub_element[:link] %>"<%= ' class="active"' if nav_subelement_active?(nav_sub_element) %>><%= t(nav_sub_element[:text]) %></a></li>
                     <% end %>
                   </ul>
                 <% end %>

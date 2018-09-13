@@ -1,14 +1,9 @@
-<div class="breadcrumb">
-	<div class="container">
-		<div class="row">
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li>Laundry Service</li>
-			</ul>
-		</div>
-	</div>
-</div>
+---
+title: navigation.services
+breadcrumbs:
+  - navigation.services.text
+---
+<% current_page.data.breadcrumbs.push "navigation.services.items.#{service}" %>
 
 <div class="page-content">
 	<div class="container">

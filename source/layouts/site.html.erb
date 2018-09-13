@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <%= favicon_tag 'images/favicon.ico' %>
-    <title><%= t('layout.title') %></title>
+    <title><%= layout_title %></title>
     <%= javascript_include_tag 'site' %>
     <%= stylesheet_link_tag 'external/bootstrap/bootstrap.min' %>
     <%= stylesheet_link_tag 'fonts' %>
@@ -23,6 +23,8 @@
 
   <body>
     <%= partial 'shared/header' %>
+
+    <%= partial 'shared/breadcrumbs', locals: { breadcrumbs: current_page.data.breadcrumbs } %>
 
     <%= yield %>
 
