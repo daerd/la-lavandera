@@ -2,28 +2,14 @@
 
 Corporative website built for a laundry bussiness using Middleman, a static site generator written in Ruby.
 
-## Server
+## Useful and self-descriptive commands
 
 ```ruby
-bundle exec middleman
+rake server
+rake build
+rake deploy
 ```
 
-http://localhost:4567
+## Config
 
-## Build
-
-NOTE: Is not necessary to execute this command explicitly as it is called before every deploy.
-
-```ruby
-bundle exec middleman build --verbose
-```
-
-## Deploy
-
-Coming soon...
-
-## Documentation
-
-https://middlemanapp.com/basics/build-and-deploy/
-
-http://localhost:4567/__middleman
+To have both the web and the deploy command working, just create a ".env" file using the ".env.example" as an example and put there the real configuration parameters.

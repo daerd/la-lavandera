@@ -21,10 +21,10 @@ end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :ftp
-  deploy.host          = 'ftp.cluster023.hosting.ovh.net'
-  deploy.path          = '/www'
-  deploy.user          = 'tintorerlk'
-  deploy.password      = ENV['PASS']
+  deploy.host          = ENV['SERVER_HOST']
+  deploy.path          = ENV['SERVER_PATH']
+  deploy.user          = ENV['SERVER_USER']
+  deploy.password      = ENV['SERVER_PASS']
   deploy.build_before  = true
 end
 
@@ -129,7 +129,7 @@ page 'send_email.php', layout: false
 config[:contact_email] = 'lalavanderacb@gmail.com'
 
 # Google Maps
-config[:gmaps_api_key] = 'gmaps_api_key'
+config[:gmaps_api_key] = ENV['GMAPS_API_KEY']
 config[:gmaps_lat]     = '40.4298498'
 config[:gmaps_lng]     = '-3.6422492'
 config[:gmaps_zoom]    = '14'
