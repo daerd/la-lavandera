@@ -1,7 +1,12 @@
 require 'lib/helpers'
 helpers Helpers
 
+### COMMON ###
+
 config[:layout] = 'site'
+activate :i18n, mount_at_root: :es
+
+### DEVELOPMENT ###
 
 configure :development do
   activate :livereload
@@ -10,9 +15,16 @@ configure :development do
   config[:livereload_css_target] = nil
 end
 
+### BUILD & DEPLOY ###
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
+end
+
+after_build do |builder|
+  # We change the index's file extension to make possible its interpretation as PHP code by the final server.
+  builder.thor.run "mv #{__dir__}/build/index.html #{__dir__}/build/index.php"
 end
 
 activate :autoprefixer do |prefix|
@@ -45,13 +57,10 @@ activate :imageoptim do |options|
   options.svgo                 = {}
 end
 
-activate :i18n,        mount_at_root: :es
 activate :asset_hash
 activate :minify_html
 
-################
-# PAGES CONFIG #
-################
+### PAGES ###
 
 # Navigation
 config[:navigation] = [
@@ -128,8 +137,11 @@ end
 page 'send_email.php', layout: false
 config[:contact_email] = 'lalavanderacb@gmail.com'
 
-# Google Maps
-config[:gmaps_api_key] = ENV['GMAPS_API_KEY']
-config[:gmaps_lat]     = '40.4298498'
-config[:gmaps_lng]     = '-3.6422492'
-config[:gmaps_zoom]    = '14'
+# Google
+config[:google_api_key]      = ENV['GOOGLE_API_KEY']
+config[:gmaps_lat]           = '40.4298498'
+config[:gmaps_lng]           = '-3.6422492'
+config[:gmaps_zoom]          = '14'
+config[:gplaces_place_id]    = 'ChIJJZgiAUIvQg0RNuOj8RudPRs'
+config[:gplaces_min_rating]  = 4
+config[:gplaces_max_reviews] = 25

@@ -1,0 +1,85 @@
+<%
+# The rendering of this page is kinda tricky as it has to generate PHP code in the build phase, and something that makes sense in the development one.
+# This humble developer apologizes for it.
+
+if build?
+%>
+  <?php
+  /*
+  Google Places API response example:
+    {
+      "result":{
+        "reviews":[
+          {
+            "author_name":"John Smith",
+            "author_url":"https://www.google.com/maps/contrib/106615704148318066456/reviews",
+            "language":"en",
+            "profile_photo_url":"https://lh4.googleusercontent.com/-2t1b0vo3t-Y/AAAAAAAAAAI/AAAAAAAAAHA/0TUB0z30s-U/s150-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating":5,
+            "relative_time_description":"in the last week",
+            "text":"Great time! 5 stars!",
+            "time":1508340655
+          }
+        ]
+      }
+    }
+  */
+
+  $data = file_get_contents('https://maps.googleapis.com/maps/api/place/details/json?key=<%= config[:google_api_key] %>&placeid=<%= config[:gplaces_place_id] %>');
+  $data = json_decode($data, true);
+
+  if($data['status'] == 'OK' && array_key_exists('result', $data) && array_key_exists('reviews', $data['result']) && !empty(array_filter($data['result']['reviews']))) {
+  ?>
+<%
+
+  reviews = [
+    {
+      review_profile_photo_url: '<?php echo $review["profile_photo_url"] ?>',
+      review_author_name:       '<?php echo $review["author_name"] ?>',
+      review_author_url:        '<?php echo $review["author_url"] ?>',
+      review_text:              '<?php echo $review["text"] ?>'
+    }
+  ]
+else
+  reviews = [
+    {
+      review_profile_photo_url: '',
+      review_author_name:       'Lorem ipsum',
+      review_author_url:        'http://www.google.com',
+      review_text:              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu orci at justo cursus malesuada. Fusce faucibus dui facilisis, sodales leo ac, porttitor sem. Etiam scelerisque semper tellus ac varius. Aliquam pharetra tellus sed massa euismod, quis iaculis nisi eleifend.'
+    },
+    {
+      review_profile_photo_url: '',
+      review_author_name:       'Dolor sit amet',
+      review_author_url:        'http://www.google.com',
+      review_text:              'Duis accumsan ipsum nunc, eget blandit justo aliquam sed. In pulvinar, sem non finibus pulvinar, leo massa dapibus mauris, eu vestibulum urna tortor hendrerit justo. Ut quis metus quis nisl vestibulum consequat. Vestibulum a aliquam justo.'
+    }
+  ]
+end
+%>
+
+<div class="content carusel--parallax" data-image="<%= image_path('parallax-img-01.jpg') %>">
+  <div class="carousel-blog slick-dotted">
+    <% if build? %>
+      <?php
+        foreach(array_slice($data['result']['reviews'], 0, <%= config[:gplaces_max_reviews] %>) as $review) {
+          if($review['language'] == 'es' && floatval($review['rating']) >= <%= config[:gplaces_min_rating] %>) {
+      ?>
+    <% end %>
+
+    <% reviews.each do |review_data| %>
+      <%= partial 'shared/google_reviews/review', locals: review_data %>
+    <% end %>
+
+    <% if build? %>
+      <?php
+          }
+        }
+      ?>
+    <% end %>
+  </div>
+</div>
+
+<% if build? %>
+  <?php } ?>
+<% end %>

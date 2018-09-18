@@ -22,13 +22,13 @@
   </head>
 
   <body>
-    <%= partial 'shared/header' %>
+    <%= partial 'layouts/shared/header' %>
 
-    <%= partial 'shared/breadcrumbs', locals: { breadcrumbs: current_page.data.breadcrumbs } %>
+    <%= partial 'layouts/shared/breadcrumbs', locals: { breadcrumbs: current_page.data.breadcrumbs } %>
 
     <%= yield %>
 
-    <%= partial 'shared/footer' %>
+    <%= partial 'layouts/shared/footer' %>
   </body>
 
   <%= yield_content :js_tags %>
