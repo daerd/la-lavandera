@@ -27,8 +27,17 @@ if build?
 
   $data = file_get_contents('https://maps.googleapis.com/maps/api/place/details/json?key=<%= config[:google_api_key] %>&placeid=<%= config[:gplaces_place_id] %>');
   $data = json_decode($data, true);
+  $reviews = array();
 
   if($data['status'] == 'OK' && array_key_exists('result', $data) && array_key_exists('reviews', $data['result']) && !empty(array_filter($data['result']['reviews']))) {
+    foreach(array_slice($data['result']['reviews'], 0, <%= config[:gplaces_max_reviews] %>) as $review) {
+      if(floatval($review['rating']) >= <%= config[:gplaces_min_rating] %> && $review['language'] == '<%= I18n.locale %>') {
+        $reviews[] = $review;
+      }
+    }
+  }
+
+  if(!empty($reviews)) {
   ?>
 <%
 
@@ -61,21 +70,15 @@ end
 <div class="content carusel--parallax" data-image="<%= image_path('parallax-img-01.jpg') %>">
   <div class="carousel-blog slick-dotted">
     <% if build? %>
-      <?php
-        foreach(array_slice($data['result']['reviews'], 0, <%= config[:gplaces_max_reviews] %>) as $review) {
-          if($review['language'] == 'es' && floatval($review['rating']) >= <%= config[:gplaces_min_rating] %>) {
-      ?>
+      <?php foreach($reviews as $review) { ?>
     <% end %>
 
-    <% reviews.each do |review_data| %>
-      <%= partial 'shared/google_reviews/review', locals: review_data %>
+    <% reviews.each do |review| %>
+      <%= partial 'shared/google_reviews/review', locals: review %>
     <% end %>
 
     <% if build? %>
-      <?php
-          }
-        }
-      ?>
+      <?php } ?>
     <% end %>
   </div>
 </div>
