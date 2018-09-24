@@ -23,8 +23,10 @@ configure :build do
 end
 
 after_build do |builder|
-  # We change the index's file extension to make possible its interpretation as PHP code by the final server.
-  builder.thor.run "mv #{__dir__}/build/index.html #{__dir__}/build/index.php"
+  # We change the some files extension to make possible its interpretation as PHP code by the final server.
+  %w(index deals).each do |page|
+    builder.thor.run "mv #{__dir__}/build/#{page}.html #{__dir__}/build/#{page}.php"
+  end
 end
 
 activate :autoprefixer do |prefix|
@@ -119,7 +121,7 @@ config[:navigation] = [
   {
     key:  'deals',
     text: 'navigation.deals',
-    link: '/deals.html'
+    link: build? ? '/deals.php' : '/deals.html'
   },
   {
     key:  'contact',
@@ -136,6 +138,7 @@ end
 # Contact
 page 'send_email.php', layout: false
 config[:contact_email] = 'lalavanderacb@gmail.com'
+config[:errors_email]  = 'lalavanderacb@gmail.com'
 
 # Google
 config[:google_api_key]      = ENV['GOOGLE_API_KEY']
@@ -145,3 +148,8 @@ config[:gmaps_zoom]          = '14'
 config[:gplaces_place_id]    = 'ChIJJZgiAUIvQg0RNuOj8RudPRs'
 config[:gplaces_min_rating]  = 4
 config[:gplaces_max_reviews] = 25
+
+# Facebook
+config[:facebook_token]      = ENV['FACEBOOK_TOKEN']
+config[:facebook_page_id]    = 1845404685734378
+config[:facebook_max_posts]  = 15

@@ -1,0 +1,45 @@
+<div class="blog-isotope" id="blogGallery">
+  <% if build? %>
+    <?php
+    try {
+      $data = file_get_contents('https://graph.facebook.com/v3.1/<%= config[:facebook_page_id] %>/posts?limit=<%= config[:facebook_max_posts] %>&fields=message,full_picture,created_time,permalink_url,comments&access_token=<%= config[:facebook_token] %>');
+      $data = json_decode($data, true);
+
+      foreach($data['data'] as $post) {
+        if(!empty($post["message"])) {
+    ?>
+  <%
+    posts = [
+      {
+        date:        '<?php echo date("d/m/Y", strtotime($post["created_time"])) ?>',
+        picture_url: '<?php echo $post["full_picture"] ?>',
+        url:         '<?php echo $post["permalink_url"] ?>',
+        message:     '<?php echo $post["message"] ?>'
+      }
+    ]
+  else
+    posts = [
+      {
+        date:        Time.now.strftime('%d/%m/%Y'),
+        picture_url: image_path('logo.png'),
+        url:         'http://www.tintorerialalavandera.com',
+        message:     'Lorem ipsum dolor sit amet.'
+      }
+    ]
+  end
+  %>
+
+  <% posts.each do |post| %>
+    <%= partial 'partials/deals/facebook_posts/post', locals: post %>
+  <% end %>
+
+  <% if build? %>
+    <?php
+        }
+      }
+    } catch (Exception $e) {
+      mail('<%= config[:errors_email] %>', '[ERROR WEB] Obtención de datos de FB', $e->getMessage());
+    }
+    ?>
+  <% end %>
+</div>

@@ -74,7 +74,7 @@ end
     <% end %>
 
     <% reviews.each do |review| %>
-      <%= partial 'shared/google_reviews/review', locals: review %>
+      <%= partial 'partials/index/google_reviews/review', locals: review %>
     <% end %>
 
     <% if build? %>
