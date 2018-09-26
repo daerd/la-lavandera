@@ -3,11 +3,11 @@
     <div class="row">
       <div class="carousel-blog-box">
         <div class="col-xs-3">
-          <a href="<%= review_author_url %>" target="_blank" class="img">
+          <a href="<%= author_url %>" target="_blank" class="img">
             <% if build? %><?php if(!empty($review['profile_photo_url'])) { ?><% end %>
 
-            <% if review_profile_photo_url.present? %>
-              <img src="<%= review_profile_photo_url %>" alt="<%= review_author_name %>" />
+            <% if profile_photo_url.present? %>
+              <img src="<%= profile_photo_url %>" alt="<%= author_name %>" />
             <% end %>
 
             <% if build? %><?php } ?><% end %>
@@ -15,8 +15,8 @@
         </div>
         <div class="col-xs-9">
           <div class="center-y">
-            <h4 class="title"><a href="<%= review_author_url %>" target="_blank"><%= review_author_name %></a></h4>
-            <div class="description"><%= review_text %></div>
+            <h4 class="title"><a href="<%= author_url %>" target="_blank"><%= author_name %></a></h4>
+            <div class="description"><%= text %></div>
           </div>
         </div>
       </div>

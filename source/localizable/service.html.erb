@@ -1,0 +1,53 @@
+<%
+# FIXME: Middleman ignores the "ignore" option (sic) in proxy pages and tries to build them too,
+#        so its necessary to capture exceptions to avoid it failing when trying to do it with no locals defined.
+begin
+	current_page.data.title       = "navigation.services.items.#{service}"
+	current_page.data.breadcrumbs = [ 'navigation.services.text', "navigation.services.items.#{service}" ]
+%>
+	<div class="page-content">
+		<div class="container">
+			<h1 class="title-underline h-sm">Laundry Service</h1>
+		</div>
+		<div class="two-columns">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div><%= image_tag "img-service-1.jpg", "class" => "img-responsive" %></div>
+						<div class="divider divider-47"></div>
+						<p>When you use our professional wash and fold services, you can be sure that your clothes will be well taken care of because we have served our customers in USA for over 80 years and we understand your needs. Unlike other lesser quality cleaners, our full service laundry employs eco-friendly methods and we treat your laundry with great care:</p>
+						<ul class="marker-list">
+							<li>All our products are chlorine-free. We use free and clear bleach for whites. We use custom detergent, an in-wash detergent booster (more CLEANING POWER) and downy fabric softener, free and clear dryer sheets.</li>
+							<li>We sort your laundry by color before washing: dark with darks, light with lights.</li>
+							<li>We use a delicate wash. We wash darks in cold water. We wash whites in hot/warm water to brighten the fabric and clean stains better. We dry all clothes in low/medium heat. Your clean laundry is then professional folded.</li>
+							<li>If you have special instructions, please write on your order.</li>
+						</ul>
+						<p>To help save the environment, we use reusable laundry bags for our pickup and delivery service. </p>
+
+						<div class="text-center"><a href="#" class="btn btn-default btn-green btn-lg">
+							<i class="icon-video"></i>Order Service Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<% content_for :js_tags do %>
+		<!--[if lt IE 9]>
+			<%= javascript_include_tag 'js/html5shiv' %>
+			<%= javascript_include_tag 'js/respond.min' %>
+		<![endif]-->
+		<%= javascript_include_tag 'external/jquery/jquery.min' %>
+		<%= javascript_include_tag 'external/bootstrap/bootstrap.min' %>
+		<%= javascript_include_tag 'external/slick/slick.min' %>
+		<%= javascript_include_tag 'external/waypoints/jquery.waypoints.min' %>
+		<%= javascript_include_tag 'external/countto/jquery.countTo' %>
+		<%= javascript_include_tag 'external/form/jquery.form' %>
+		<%= javascript_include_tag 'external/form/jquery.validate.min' %>
+		<%= javascript_include_tag 'site' %>
+	<% end %>
+<%
+rescue
+end
+%>

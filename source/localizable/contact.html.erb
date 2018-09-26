@@ -99,7 +99,7 @@ breadcrumbs:
 					$(form).ajaxSubmit({
 						type: "POST",
 						data: $(form).serialize(),
-						url: "send_email.php",
+						url: "/send_email.php",
 						success: function () {
 							$('#success').fadeIn();
 							$('#contact-form').each(function () {

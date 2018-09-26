@@ -43,25 +43,25 @@ if build?
 
   reviews = [
     {
-      review_profile_photo_url: '<?php echo $review["profile_photo_url"] ?>',
-      review_author_name:       '<?php echo $review["author_name"] ?>',
-      review_author_url:        '<?php echo $review["author_url"] ?>',
-      review_text:              '<?php echo $review["text"] ?>'
+      profile_photo_url: '<?php echo $review["profile_photo_url"] ?>',
+      author_name:       '<?php echo $review["author_name"] ?>',
+      author_url:        '<?php echo $review["author_url"] ?>',
+      text:              '<?php echo $review["text"] ?>'
     }
   ]
 else
   reviews = [
     {
-      review_profile_photo_url: '',
-      review_author_name:       'Lorem ipsum',
-      review_author_url:        'http://www.google.com',
-      review_text:              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu orci at justo cursus malesuada. Fusce faucibus dui facilisis, sodales leo ac, porttitor sem. Etiam scelerisque semper tellus ac varius. Aliquam pharetra tellus sed massa euismod, quis iaculis nisi eleifend.'
+      profile_photo_url: '',
+      author_name:       'Lorem ipsum',
+      author_url:        'http://www.google.com',
+      text:              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu orci at justo cursus malesuada. Fusce faucibus dui facilisis, sodales leo ac, porttitor sem. Etiam scelerisque semper tellus ac varius. Aliquam pharetra tellus sed massa euismod, quis iaculis nisi eleifend.'
     },
     {
-      review_profile_photo_url: '',
-      review_author_name:       'Dolor sit amet',
-      review_author_url:        'http://www.google.com',
-      review_text:              'Duis accumsan ipsum nunc, eget blandit justo aliquam sed. In pulvinar, sem non finibus pulvinar, leo massa dapibus mauris, eu vestibulum urna tortor hendrerit justo. Ut quis metus quis nisl vestibulum consequat. Vestibulum a aliquam justo.'
+      profile_photo_url: '',
+      author_name:       'Dolor sit amet',
+      author_url:        'http://www.google.com',
+      text:              'Duis accumsan ipsum nunc, eget blandit justo aliquam sed. In pulvinar, sem non finibus pulvinar, leo massa dapibus mauris, eu vestibulum urna tortor hendrerit justo. Ut quis metus quis nisl vestibulum consequat. Vestibulum a aliquam justo.'
     }
   ]
 end

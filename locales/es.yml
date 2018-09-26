@@ -1,5 +1,17 @@
 es:
 
+  paths:
+    contact:                    contacto
+    deals:                      ofertas
+    faq:                        preguntas-frecuentes
+    prices:                     precios
+    laundry:                    lavanderia
+    dry_cleaning:               limpieza-en-seco
+    leather_and_suede:          cuero-ante-y-otras-pieles
+    wedding_and_event_clothing: vestidos-de-boda-y-otros-eventos
+    uniforms:                   uniformes-y-ropa-de-trabajo
+    linen:                      ropa-de-cama
+
   global:
     name: Tintorería La Lavandera
     slogan: Cuidamos de tu ropa como en casa

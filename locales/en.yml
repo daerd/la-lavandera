@@ -1,1 +1,13 @@
 en:
+
+  paths:
+    contact:                    contact
+    deals:                      deals
+    faq:                        faq
+    prices:                     prices
+    laundry:                    laundry
+    dry_cleaning:               dry-cleaning
+    leather_and_suede:          leather-and-suede
+    wedding_and_event_clothing: wedding-and-event-clothing
+    uniforms:                   uniforms
+    linen:                      linen

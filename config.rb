@@ -3,8 +3,11 @@ helpers Helpers
 
 ### COMMON ###
 
-config[:layout] = 'site'
-activate :i18n, mount_at_root: :es
+config[:layout]            = 'layouts/site'
+config[:default_locale]    = :es
+config[:available_locales] = [ config[:default_locale], :en ]
+
+activate :i18n, mount_at_root: config[:default_locale], langs: config[:available_locales]
 
 ### DEVELOPMENT ###
 
@@ -25,7 +28,12 @@ end
 after_build do |builder|
   # We change the some files extension to make possible its interpretation as PHP code by the final server.
   %w(index deals).each do |page|
-    builder.thor.run "mv #{__dir__}/build/#{page}.html #{__dir__}/build/#{page}.php"
+    [ nil ] + config[:available_locales].each do |locale|
+      page_name   = page == 'index' ? page : I18n.t("paths.#{page}", locale: locale || config[:default_locale])
+      locale_path = (locale.present? && locale != config[:default_locale]) ? "#{locale.to_s}/" : ''
+
+      builder.thor.run "mv #{__dir__}/build/#{locale_path}#{page_name}.html #{__dir__}/build/#{locale_path}#{page_name}.php"
+    end
   end
 end
 
@@ -66,73 +74,30 @@ activate :minify_html
 
 # Navigation
 config[:navigation] = [
-  {
-    key:  'home',
-    text: 'navigation.home',
-    link: '/'
-  },
-  {
-    key:  'services',
-    text: 'navigation.services.text',
-    link: '#',
-    items: [
-      {
-        key: 'laundry',
-        text: 'navigation.services.items.laundry',
-        link: '/laundry.html'
-      },
-      {
-        key:  'dry_cleaning',
-        text: 'navigation.services.items.dry_cleaning',
-        link: '/dry-cleaning.html'
-      },
-      {
-        key: 'leather_and_suede',
-        text: 'navigation.services.items.leather_and_suede',
-        link: '/leather-and-suede.html'
-      },
-      {
-        key: 'wedding_and_event_clothing',
-        text: 'navigation.services.items.wedding_and_event_clothing',
-        link: '/wedding-and-event-clothing.html'
-      },
-      {
-        key:  'uniforms',
-        text: 'navigation.services.items.uniforms',
-        link: '/uniforms.html'
-      },
-      {
-        key:  'linen',
-        text: 'navigation.services.items.linen',
-        link: '/linen.html'
-      }
+  { key: 'home',     text: 'navigation.home',          link: '/' },
+  { key: 'services', text: 'navigation.services.text', link: '#', items: [
+      { key: 'laundry',                    text: 'navigation.services.items.laundry' },
+      { key: 'dry_cleaning',               text: 'navigation.services.items.dry_cleaning' },
+      { key: 'leather_and_suede',          text: 'navigation.services.items.leather_and_suede' },
+      { key: 'wedding_and_event_clothing', text: 'navigation.services.items.wedding_and_event_clothing' },
+      { key: 'uniforms',                   text: 'navigation.services.items.uniforms' },
+      { key: 'linen',                      text: 'navigation.services.items.linen' }
     ]
   },
-  {
-    key:  'prices',
-    text: 'navigation.prices',
-    link: '/prices.html'
-  },
-  {
-    key:  'faq',
-    text: 'navigation.faq',
-    link: '/faq.html'
-  },
-  {
-    key:  'deals',
-    text: 'navigation.deals',
-    link: build? ? '/deals.php' : '/deals.html'
-  },
-  {
-    key:  'contact',
-    text: 'navigation.contact',
-    link: '/contact.html'
-  }
+  { key: 'prices',  text: 'navigation.prices' },
+  { key: 'faq',     text: 'navigation.faq' },
+  { key: 'deals',   text: 'navigation.deals', link_extension: (build? ? 'php' : 'html') },
+  { key: 'contact', text: 'navigation.contact' }
 ]
 
 # Services
 config[:navigation].select{ |x| x[:key] == 'services' }.first[:items].map{ |x| x[:key] }.each do |service|
-  proxy "/#{service.gsub('_', '-')}.html", '/service.html', locals: { service: service }, ignore: true
+  [ nil ] + config[:available_locales].each do |locale|
+    page_name   = I18n.t("paths.#{service}", locale: locale || config[:default_locale])
+    locale_path = (locale.present? && locale != config[:default_locale]) ? "#{locale.to_s}/" : ''
+
+    proxy "/#{locale_path}#{page_name}.html", 'localizable/service.html', locals: { service: service }, ignore: true
+  end
 end
 
 # Contact
