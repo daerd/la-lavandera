@@ -38,7 +38,7 @@
         }
       }
     } catch (Exception $e) {
-      mail('<%= config[:errors_email] %>', '[ERROR WEB] Obtención de datos de FB', $e->getMessage());
+      mail('<%= config[:errors_email] %>', '[ERROR WEB] Facebook posts', $e->getMessage());
     }
     ?>
   <% end %>

@@ -25,19 +25,20 @@ if build?
     }
   */
 
-  $data = file_get_contents('https://maps.googleapis.com/maps/api/place/details/json?key=<%= config[:google_api_key] %>&placeid=<%= config[:gplaces_place_id] %>');
-  $data = json_decode($data, true);
-  $reviews = array();
+  try {
+    $data = file_get_contents('https://maps.googleapis.com/maps/api/place/details/json?key=<%= config[:google_api_key] %>&placeid=<%= config[:gplaces_place_id] %>');
+    $data = json_decode($data, true);
+    $reviews = array();
 
-  if($data['status'] == 'OK' && array_key_exists('result', $data) && array_key_exists('reviews', $data['result']) && !empty(array_filter($data['result']['reviews']))) {
-    foreach(array_slice($data['result']['reviews'], 0, <%= config[:gplaces_max_reviews] %>) as $review) {
-      if(floatval($review['rating']) >= <%= config[:gplaces_min_rating] %> && $review['language'] == '<%= I18n.locale %>') {
-        $reviews[] = $review;
+    if($data['status'] == 'OK' && array_key_exists('result', $data) && array_key_exists('reviews', $data['result']) && !empty(array_filter($data['result']['reviews']))) {
+      foreach(array_slice($data['result']['reviews'], 0, <%= config[:gplaces_max_reviews] %>) as $review) {
+        if(floatval($review['rating']) >= <%= config[:gplaces_min_rating] %> && $review['language'] == '<%= I18n.locale %>') {
+          $reviews[] = $review;
+        }
       }
     }
-  }
 
-  if(!empty($reviews)) {
+    if(!empty($reviews)) {
   ?>
 <%
 
@@ -84,5 +85,10 @@ end
 </div>
 
 <% if build? %>
-  <?php } ?>
+  <?php
+    }
+  } catch (Exception $e) {
+    mail('<%= config[:errors_email] %>', '[ERROR WEB] Google reviews', $e->getMessage());
+  }
+  ?>
 <% end %>
