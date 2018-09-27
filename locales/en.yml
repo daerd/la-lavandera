@@ -11,3 +11,17 @@ en:
     wedding_and_event_clothing: wedding-and-event-clothing
     uniforms:                   uniforms
     linen:                      linen
+
+  global:
+    name:   Tintorería La Lavandera
+    slogan: Cuidamos de tu ropa como en casa
+    address:
+      line_1: Calle de Ascao 3
+      line_2: 28017 Madrid
+    phone: 91 408 18 64
+    schedule:
+      line_1: Mon-Fri 9:30-13:30 & 17:00-20:00
+      line_2: Sat. 9:30-13:30
+    facebook_page:  https://www.facebook.com/lalavanderamadrid
+    instagram_page: https://www.instagram.com/lalavanderamadrid
+    change_locale:  English version

@@ -4866,7 +4866,7 @@ div[class^="bubble-"] {
   }
 }
 
-#home-delivery {
+#home_delivery {
   background: #f5f5f5;
   border-radius: 25px;
   margin: 25px 0;
@@ -4875,4 +4875,18 @@ div[class^="bubble-"] {
 .slick-dots {
   background: #dddddd;
   padding: 5px;
+}
+
+.change-locale {
+  background: #415d9d;
+  color: #ffffff !important;
+  font-size: 0.85em;
+  float: right;
+  text-align: center;
+  padding: 2px 8px;
+  border-radius: 0 0 5px 5px;
+
+  &:hover {
+    color: #ffffff;
+  }
 }

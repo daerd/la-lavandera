@@ -13,7 +13,7 @@ es:
     linen:                      ropa-de-cama
 
   global:
-    name: Tintorería La Lavandera
+    name:   Tintorería La Lavandera
     slogan: Cuidamos de tu ropa como en casa
     address:
       line_1: Calle de Ascao 3
@@ -24,6 +24,7 @@ es:
       line_2: Sáb. 9:30-13:30
     facebook_page:  https://www.facebook.com/lalavanderamadrid
     instagram_page: https://www.instagram.com/lalavanderamadrid
+    change_locale:  Versión española
 
   layout:
     title: Tintorería La Lavandera

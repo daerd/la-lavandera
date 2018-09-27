@@ -16,6 +16,7 @@ configure :development do
 
   config[:debug_assets]          = true
   config[:livereload_css_target] = nil
+  config[:php_files]             = []
 end
 
 ### BUILD & DEPLOY ###
@@ -23,11 +24,13 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
+
+  config[:php_files] = %w(index deals)
 end
 
 after_build do |builder|
   # We change the some files extension to make possible its interpretation as PHP code by the final server.
-  %w(index deals).each do |page|
+  config[:php_files].each do |page|
     [ nil ] + config[:available_locales].each do |locale|
       page_name   = page == 'index' ? page : I18n.t("paths.#{page}", locale: locale || config[:default_locale])
       locale_path = (locale.present? && locale != config[:default_locale]) ? "#{locale.to_s}/" : ''
@@ -86,7 +89,7 @@ config[:navigation] = [
   },
   { key: 'prices',  text: 'navigation.prices' },
   { key: 'faq',     text: 'navigation.faq' },
-  { key: 'deals',   text: 'navigation.deals', link_extension: (build? ? 'php' : 'html') },
+  { key: 'deals',   text: 'navigation.deals' },
   { key: 'contact', text: 'navigation.contact' }
 ]
 
