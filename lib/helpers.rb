@@ -5,7 +5,7 @@ module Helpers
 
   def link_path(link)
     unless '#' == link
-      link      = '/'                           if link == 'home'
+      link      = '/'                           if link.to_s == 'home'
       extension = get_path_extension(link)
       link      = t("paths.#{link}")            if     link != '/' && I18n.exists?("paths.#{link}")
       link      = "/#{link}"                    unless link[0] == '/'
@@ -46,6 +46,7 @@ module Helpers
 
   def nav_link_active?(link, items)
     remove_file_extension(link) == remove_file_extension(current_page.url) ||
+    (I18n.locale.to_s == remove_file_extension(current_page.url) && remove_file_extension(link) == 'home') ||
     (
       items.present? &&
       items.select{ |page,text| remove_file_extension(link_path(page)).to_s == remove_file_extension(current_page.url) }.present?

@@ -82,7 +82,7 @@ I18n.t('navigation.services.items').keys.each do |service|
     page_name   = I18n.t("paths.#{service}", locale: locale || config[:default_locale])
     locale_path = (locale.present? && locale != config[:default_locale]) ? "#{locale.to_s}/" : ''
 
-    proxy "/#{locale_path}#{page_name}.html", 'localizable/service.html', locals: { service: service }, ignore: true
+    proxy "/#{locale_path}#{page_name}.html", 'localizable/service.html', locals: { service: service }, ignore: true, lang: locale
   end
 end
 
