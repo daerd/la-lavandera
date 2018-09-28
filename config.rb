@@ -25,6 +25,25 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :asset_hash
+  activate :minify_html
+
+  activate :imageoptim do |options|
+    options.manifest             = true # Use a build manifest to prevent re-compressing images between builds.
+    options.skip_missing_workers = true # Silence problematic "image_optim" workers.
+    options.verbose              = false # Causes "image_optim" to be in shouty-mode.
+    options.nice                 = true # Setting "nice" and "threads" to true or nil will let options determine them.
+    options.threads              = true
+    options.image_extensions     = %w(.png .jpg .gif .svg) # Image extensions to attempt to compress.
+    options.advpng               = { level: 4 }
+    options.gifsicle             = { interlace: false }
+    options.jpegoptim            = { strip: [ 'all' ], max_quality: 100 }
+    options.jpegtran             = { copy_chunks: false, progressive: true, jpegrescan: true }
+    options.optipng              = { level: 6, interlace: false }
+    options.pngcrush             = { chunks: [ 'all' ], fix: false, brute: false }
+    options.pngout               = { copy_chunks: false, strategy: 0 }
+    options.svgo                 = {}
+  end
 
   config[:php_files] = %w(index deals)
 end
@@ -33,10 +52,18 @@ after_build do |builder|
   # We change the some files extension to make possible its interpretation as PHP code by the final server.
   config[:php_files].each do |page|
     [ nil ] + config[:available_locales].each do |locale|
-      page_name   = page == 'index' ? page : I18n.t("paths.#{page}", locale: locale || config[:default_locale])
-      locale_path = (locale.present? && locale != config[:default_locale]) ? "#{locale.to_s}/" : ''
+      page_name = if page == 'index'
+        page
+      else
+        locale_paths = I18n.t('paths', locale: locale || config[:default_locale])
+        locale_paths.include?(page.to_sym) ? locale_paths[page.to_sym] : nil
+      end
 
-      builder.thor.run "mv #{__dir__}/build/#{locale_path}#{page_name}.html #{__dir__}/build/#{locale_path}#{page_name}.php"
+      if page_name
+        locale_path = (locale.present? && locale != config[:default_locale]) ? "#{locale.to_s}/" : ''
+
+        builder.thor.run "mv #{__dir__}/build/#{locale_path}#{page_name}.html #{__dir__}/build/#{locale_path}#{page_name}.php"
+      end
     end
   end
 end
@@ -53,26 +80,6 @@ activate :deploy do |deploy|
   deploy.password      = ENV['SERVER_PASS']
   deploy.build_before  = true
 end
-
-activate :imageoptim do |options|
-  options.manifest             = true # Use a build manifest to prevent re-compressing images between builds.
-  options.skip_missing_workers = true # Silence problematic "image_optim" workers.
-  options.verbose              = false # Causes "image_optim" to be in shouty-mode.
-  options.nice                 = true # Setting "nice" and "threads" to true or nil will let options determine them.
-  options.threads              = true
-  options.image_extensions     = %w(.png .jpg .gif .svg) # Image extensions to attempt to compress.
-  options.advpng               = { level: 4 }
-  options.gifsicle             = { interlace: false }
-  options.jpegoptim            = { strip: [ 'all' ], max_quality: 100 }
-  options.jpegtran             = { copy_chunks: false, progressive: true, jpegrescan: true }
-  options.optipng              = { level: 6, interlace: false }
-  options.pngcrush             = { chunks: [ 'all' ], fix: false, brute: false }
-  options.pngout               = { copy_chunks: false, strategy: 0 }
-  options.svgo                 = {}
-end
-
-activate :asset_hash
-activate :minify_html
 
 ### PAGES ###
 
