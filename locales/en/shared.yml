@@ -25,3 +25,22 @@ en:
     facebook_page:  https://www.facebook.com/lalavanderamadrid
     instagram_page: https://www.instagram.com/lalavanderamadrid
     change_locale:  English version
+
+  layout:
+    title: Tintorería La Lavandera
+
+  navigation:
+    home: Inicio
+    services:
+      text: Servicios
+      items:
+        laundry:                    Lavandería
+        dry_cleaning:               Limpieza en seco
+        leather_and_suede:          Cuero, ante y otras pieles
+        wedding_and_event_clothing: Vestidos de boda y otros eventos
+        uniforms:                   Uniformes y ropa de trabajo
+        linen:                      Ropa de cama
+    prices:  Precios
+    faq:     Preguntas Frecuentes
+    deals:   Ofertas
+    contact: Contacto

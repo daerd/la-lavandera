@@ -1,0 +1,188 @@
+es:
+
+  prices:
+
+    title: Nuestros precios
+    intro: Aprovéchate de nuestros precios y ofertas. Ahorrarás jabón, agua, electricidad y sobre todo tiempo para disfrutar haciendo lo que más te gusta. Estos precios incluyen desmanchado, lavado, planchado, embolsado e IVA.
+
+    featured:
+      shirts:
+        title: Camisas desde <span class="base-color">3€</span>
+      laundry:
+        title: Lavanderia desde <span class="base-color">1,06€</span>
+      delivery:
+        title: Servicio a domicilio... <span class="base-color">¡gratis!</span>
+        info:  "Pedido mínimo: 20€"
+
+    list:
+
+      - title: Limpieza en seco
+        items:
+          - title: Camisa
+            price: 3,50€
+          - title: Blusa
+            price: 5,50€
+          - title: Polo
+            price: 3,50€
+          - title: Camisetas
+            price: 3,25€
+          - title: Corbata
+            price: 3,50€
+          - title: Chaleco
+            price: 5,10€
+          - title: Traje
+            price: 12,25€
+          - title: Americana / Chaqueta
+            price: 7,25€
+          - title: Pantalon
+            price: 5,50€
+          - title: Falda
+            price: 5,50€
+          - title: Vestido
+            price: Desde 9,95€
+          - title: Jersey
+            price: 5,35€
+          - title: Cazadora
+            price: 10,95€
+          - title: Abrigo
+            price: 11,75€
+          - title: Plumífero
+            price: 16,90€
+          - title: Gabardina
+            price: Desde 12,30€
+          - title: Pañuelo
+            price: 3,20€
+          - title: Foulard
+            price: 4,95€
+          - title: Bufanda
+            price: 3,50€
+          - title: Guantes
+            price: 3,00€
+
+      - title: Planchado
+        items:
+          - title: Lote de 5 prendas
+            price: 11,00€
+          - title: Lote de 10 prendas
+            price: 20,00€
+          - title: Lote de 15 prendas
+            price: 26,00€
+          - title: Lote de 20 prendas
+            price: 33,00€
+          - title: Lote de 25 prendas
+            price: 40,00€
+          - title: Camisa
+            price: 2,45€
+          - title: Blusa
+            price: 3,85€
+          - title: Polo
+            price: 2,70€
+          - title: Camisetas
+            price: 2,30€
+          - title: Corbata
+            price: 2,80€
+          - title: Chaleco
+            price: 3,55€
+          - title: Traje
+            price: 8,60€
+          - title: Americana / Chaqueta
+            price: 5,10€
+          - title: Pantalon
+            price: 3,85€
+          - title: Falda
+            price: 3,85€
+          - title: Vestido
+            price: Desde 6,75€
+          - title: Jersey
+            price: 3,75€
+          - title: Cazadora
+            price: 7,65€
+          - title: Abrigo
+            price: 9,05€
+          - title: Gabardina
+            price: Desde 8,61€
+          - title: Foulard
+            price: 3,47€
+          - title: Bufanda
+            price: 2,45€
+
+      - title: Lavandería
+        items:
+          - title: 5 kg
+            price: 8,00€
+          - title: 10 kg
+            price: 11,00€
+          - title: 15 kg
+            price: 16,00€
+
+      - title: Alfombras
+        items:
+          - title: Alfombra
+            price: 8,20€ / m2
+          - title: Alfombra jarapa
+            price: 8,20€ / m2
+          - title: Alfombra oriental
+            price: 10,95€ / m2
+          - title: Alfombra piel
+            price: 19,00€ / m2
+          - title: Kilim
+            price: 12,35€ / m2
+
+      - title: Ropa de hogar
+        items:
+          - title: Edredón
+            price: Desde 12,50€
+          - title: Edredón de plumas
+            price: Desde 14,95€
+          - title: Colcha
+            price: Desde 14,85€
+          - title: Juego de funda nórdica
+            price: Desde 12,35€
+          - title: Juego de sábanas
+            price: Desde 10,25€
+          - title: Manta
+            price: Desde 9,95€
+          - title: Funda de sofá
+            price: Desde 19,60€
+          - title: Cortina
+            price: Desde 4,45€ / m2
+          - title: Visillo
+            price: Desde 2,80€ / m2
+          - title: Mantel
+            price: Desde 6,00€
+
+      - title: Limpieza de pieles
+        items:
+          - title: Americana
+            price: Desde 32,60€
+          - title: Barbour
+            price: 43,50€
+          - title: Bolso
+            price: Desde 38,10€
+          - title: Chaquetón
+            price: Desde 36,00€
+          - title: Cazadora
+            price: Desde 32,60€
+          - title: Zapatos / Botas
+            price: Desde 27,20€
+
+      - title: Ofertas y promociones
+        items:
+          - title: Pack ejecutivo (traje, camisa y corbata)
+            price: 16,00€
+          - title: 3 Trajes - ¡Añade más por sólo 10,30 / unidad!
+            price: 30,90€
+          - title: 3 corbatas - ¡Añade más por sólo 3,00 / unidad!
+            price: 9,50€
+          - title: 3 camisas - ¡Añade más por sólo 3,00 / unidad!
+            price: 9,00€
+          - title: Bono de planchado - 5 prendas
+            price: 11,00€
+          - title: Bono de planchado - 10 prendas
+            price: 20,00€
+          - title: Bono de planchado - 15 prendas
+            price: 26,00€
+          - title: Bono de planchado - 20 prendas
+            price: 33,00€
+          - title: Bono de planchado - 25 prendas
+            price: 40,00€
