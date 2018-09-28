@@ -7,13 +7,13 @@
         </a>
         <nav class="top-menu">
           <ul class="menu">
-            <% config[:navigation].each do |nav_element| %>
+            <% t('navigation').each do |page,data| %>
               <li>
-                <%= nav_element_link(nav_element) %>
-                <% if nav_element[:items].present? %>
+                <%= nav_link(page,data) %>
+                <% if data[:items].present? %>
                   <ul>
-                    <% nav_element[:items].each do |nav_sub_element| %>
-                      <li><%= nav_element_link(nav_sub_element) %></li>
+                    <% data[:items].each do |page,text| %>
+                      <li><%= nav_link(page, { text: text }) %></li>
                     <% end %>
                   </ul>
                 <% end %>

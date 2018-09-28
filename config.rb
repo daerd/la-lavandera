@@ -8,6 +8,7 @@ config[:default_locale]    = :es
 config[:available_locales] = [ config[:default_locale], :en ]
 
 activate :i18n, mount_at_root: config[:default_locale], langs: config[:available_locales]
+I18n.load_path = Dir[Middleman::Application.root_path.join('locales', '**', '*.{yml}')]
 
 ### DEVELOPMENT ###
 
@@ -75,26 +76,8 @@ activate :minify_html
 
 ### PAGES ###
 
-# Navigation
-config[:navigation] = [
-  { key: 'home',     text: 'navigation.home',          link: '/' },
-  { key: 'services', text: 'navigation.services.text', link: '#', items: [
-      { key: 'laundry',                    text: 'navigation.services.items.laundry' },
-      { key: 'dry_cleaning',               text: 'navigation.services.items.dry_cleaning' },
-      { key: 'leather_and_suede',          text: 'navigation.services.items.leather_and_suede' },
-      { key: 'wedding_and_event_clothing', text: 'navigation.services.items.wedding_and_event_clothing' },
-      { key: 'uniforms',                   text: 'navigation.services.items.uniforms' },
-      { key: 'linen',                      text: 'navigation.services.items.linen' }
-    ]
-  },
-  { key: 'prices',  text: 'navigation.prices' },
-  { key: 'faq',     text: 'navigation.faq' },
-  { key: 'deals',   text: 'navigation.deals' },
-  { key: 'contact', text: 'navigation.contact' }
-]
-
 # Services
-config[:navigation].select{ |x| x[:key] == 'services' }.first[:items].map{ |x| x[:key] }.each do |service|
+I18n.t('navigation.services.items').keys.each do |service|
   [ nil ] + config[:available_locales].each do |locale|
     page_name   = I18n.t("paths.#{service}", locale: locale || config[:default_locale])
     locale_path = (locale.present? && locale != config[:default_locale]) ? "#{locale.to_s}/" : ''

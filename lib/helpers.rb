@@ -5,6 +5,7 @@ module Helpers
 
   def link_path(link)
     unless '#' == link
+      link      = '/'                           if link == 'home'
       extension = get_path_extension(link)
       link      = t("paths.#{link}")            if     link != '/' && I18n.exists?("paths.#{link}")
       link      = "/#{link}"                    unless link[0] == '/'
@@ -23,7 +24,7 @@ module Helpers
       unless new_locale == I18n.locale
         locale_link_path = new_locale == config[:default_locale] ? '' : "/#{new_locale}"
 
-        if current_path_key.present?
+        if current_path_key.present? && I18n.t("paths", locale: new_locale).include?(current_path_key)
           locale_link_path += "/#{t("paths.#{current_path_key}", locale: new_locale)}"
           locale_link_path += ".#{get_path_extension(current_path_key)}"
         elsif new_locale == config[:default_locale]
@@ -37,17 +38,17 @@ module Helpers
     links
   end
 
-  def nav_element_link(nav_element)
-    link = link_path(nav_element[:link] || nav_element[:key])
+  def nav_link(page, data)
+    link = link_path(page)
 
-    link_to t(nav_element[:text]), link, ({ class: 'active' } if nav_element_active?(link, nav_element[:items]))
+    link_to data[:text], link, ({ class: 'active' } if nav_link_active?(link, data[:items]))
   end
 
-  def nav_element_active?(link, items)
+  def nav_link_active?(link, items)
     remove_file_extension(link) == remove_file_extension(current_page.url) ||
     (
       items.present? &&
-      items.select{ |x| remove_file_extension(x[:link]) == remove_file_extension(current_page.url) }.present?
+      items.select{ |page,text| remove_file_extension(link_path(page)).to_s == remove_file_extension(current_page.url) }.present?
     )
   end
 

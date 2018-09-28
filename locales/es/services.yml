@@ -1,0 +1,58 @@
+es:
+
+  services:
+
+    contact: ¡Contáctanos!
+
+    items:
+
+      dry_cleaning:
+        title: Limpieza en seco
+        text: |
+          Nuestros servicios de limpieza en seco son la mejor alternativa para obtener resultados rapidos, precisos y de alta calidad.<br />
+          Muchas de nuestras prendas no pueden ser sumergidas en agua por que se deterioran, deformas, encogen o alteran su color. Es la mejor solucion para eliminar molestas manchas de grasa, chocolate, café, vino, etc...
+
+      ironing:
+        title: Planchado
+        text: |
+          ¿Te gustaría vestir perfecto cada dia pero no tienes tiempo para planchar tus prendas? La Lavandera te soluciona este problema. Con nuestros servicio de planchado podras olvidarte de la plancha y disfrutar de tu tiempo libre. Consulta nuestros lotes de planchado con servicio a domicilio gratuito.
+
+      laundry:
+        title: Lavandería
+        text: |
+          La colada es una tarea que nos roba mucho tiempo diariamente. Nuestro servicio de lavanderia te ayuda a tener tu ropa limpia rapidamente. Recogemos su ropa y se la entregamos doblada y embolsada. Consulta nuestros precios.
+
+      carpets:
+        title: Alfombras
+        text: |
+          Para mantener tus alfombras libres de suciedad y acaros recomendamos su limpieza profesional al menos una vez al año.<br />
+          Nunca deben guardarse humedas o sucias, de lo contrario podran ser victimas de los mohos o de las polillas. Utiliza nuestro servicio de limpieza de alfombras y te las guardamos hasta que las necesites  totalmente gratis. Y ademas servicio de recogida y entrega a domicilio incluido.
+
+      linen:
+        title: Ropa de hogar
+        text: |
+          La limpieza de ropa de hogar como pueden ser fundas de sofas, cortinas, edredones, mantas, etc... es una tarea cada vez mas complicada. Su gran tamaño y la cantidad de agua que absorben este tipo de prendas, hacen que el peso acumulado pueda causar daños irreparables en nuestra lavadora.<br />
+          Con nuestras lavadoras de gran capacidad nos encargamos de la limpieza de tu ropa de hogar por muy poco.
+
+      leather_and_suede:
+        title: Limpieza de pieles
+        text: |
+          La limpieza de cuero, ante y demas pieles es una de las tareas mas complicadas, por eso siempre ha de hacerla un profesional. Recomendamos darle a tus prendas de piel un tratamiento/limpieza anual, de esta manera evitaras daños como decoloraciones, endurecimientos o cuarteos.
+
+      shop:
+        title: Tienda
+        text: |
+          ¿Quieres darle a tu ropa un acabado profesional en casa? En nuestra tienda te ofrecemos la posibilidad de adquirir algunos de los productos con los que trabajamos. Ambientadores para ropa y armarios, cepillos y quitapelusas.
+
+      delivery:
+        title: A domicilio
+        text: |
+          ¿Sales de trabajar y todavía tienes que poner lavadoras y planchar? Imagina tener tu ropa lista con una sola llamada.<br />
+          Con nuestra recogida y entrega a domicilio te damos la oportunidad de disfrutar de todos nuestros servicios sin moverte de casa. ¡ADEMÁS ES GRATIS!
+
+      professionals:
+        title: Profesionales y empresas
+        text: |
+          ¿Eres propietario o gestionas un alojamiento turístico? Mejora la experiencia de tus huéspedes con nosotros. Ofrecemos todos nuestros servicios a domicilio para que sigan disfrutando de sus vacaciones. Ganarás tú y tus clientes.<br />
+          ¿Te gustaría añadir el servício de limpieza para los uniformes o ropa de tu plantilla?<br />
+          Nuestros servicios para profesionales y empresas son la mejor solución para añadir valor a tu negocio.

@@ -1,16 +1,18 @@
 en:
 
   paths:
-    contact:                    contact
-    deals:                      deals
-    faq:                        faq
-    prices:                     prices
-    laundry:                    laundry
-    dry_cleaning:               dry-cleaning
-    leather_and_suede:          leather-and-suede
-    wedding_and_event_clothing: wedding-and-event-clothing
-    uniforms:                   uniforms
-    linen:                      linen
+    contact:           contact
+    faq:               faq
+    prices:            prices
+    dry_cleaning:      dry-cleaning
+    ironing:           ironing
+    laundry:           laundry
+    carpets:           carpets
+    linen:             linen
+    leather_and_suede: leader-and-suede
+    shop:              shop
+    delivery:          delivery
+    professionals:     professionals
 
   global:
     name:   Tintorería La Lavandera
@@ -30,17 +32,23 @@ en:
     title: Tintorería La Lavandera
 
   navigation:
-    home: Inicio
+    home:
+      text: Inicio
     services:
       text: Servicios
       items:
-        laundry:                    Lavandería
-        dry_cleaning:               Limpieza en seco
-        leather_and_suede:          Cuero, ante y otras pieles
-        wedding_and_event_clothing: Vestidos de boda y otros eventos
-        uniforms:                   Uniformes y ropa de trabajo
-        linen:                      Ropa de cama
-    prices:  Precios
-    faq:     Preguntas Frecuentes
-    deals:   Ofertas
-    contact: Contacto
+        dry_cleaning:      Limpieza en seco
+        ironing:           Planchado
+        laundry:           Lavandería
+        carpets:           Alfombras
+        linen:             Ropa de hogar
+        leather_and_suede: Cuero, ante y otras pieles
+        shop:              Tienda
+        delivery:          A domicilio
+        professionals:     Profesionales y empresas
+    prices:
+      text: Precios
+    faq:
+      text: Preguntas Frecuentes
+    contact:
+      text: Contacto

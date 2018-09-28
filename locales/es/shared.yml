@@ -1,16 +1,19 @@
 es:
 
   paths:
-    contact:                    contacto
-    deals:                      ofertas
-    faq:                        preguntas-frecuentes
-    prices:                     precios
-    laundry:                    lavanderia
-    dry_cleaning:               limpieza-en-seco
-    leather_and_suede:          cuero-ante-y-otras-pieles
-    wedding_and_event_clothing: vestidos-de-boda-y-otros-eventos
-    uniforms:                   uniformes-y-ropa-de-trabajo
-    linen:                      ropa-de-cama
+    contact:           contacto
+    deals:             ofertas
+    faq:               preguntas-frecuentes
+    prices:            precios
+    dry_cleaning:      limpieza-en-seco
+    ironing:           planchado
+    laundry:           lavanderia
+    carpets:           alfombras
+    linen:             ropa-de-hogar
+    leather_and_suede: cuero-ante-y-otras-pieles
+    shop:              tienda
+    delivery:          servicio-a-domicilio
+    professionals:     profesionales-y-empresas
 
   global:
     name:   Tintorería La Lavandera
@@ -30,17 +33,25 @@ es:
     title: Tintorería La Lavandera
 
   navigation:
-    home: Inicio
+    home:
+      text: Inicio
     services:
       text: Servicios
       items:
-        laundry:                    Lavandería
-        dry_cleaning:               Limpieza en seco
-        leather_and_suede:          Cuero, ante y otras pieles
-        wedding_and_event_clothing: Vestidos de boda y otros eventos
-        uniforms:                   Uniformes y ropa de trabajo
-        linen:                      Ropa de cama
-    prices:  Precios
-    faq:     Preguntas Frecuentes
-    deals:   Ofertas
-    contact: Contacto
+        dry_cleaning:      Limpieza en seco
+        ironing:           Planchado
+        laundry:           Lavandería
+        carpets:           Alfombras
+        linen:             Ropa de hogar
+        leather_and_suede: Cuero, ante y otras pieles
+        shop:              Tienda
+        delivery:          A domicilio
+        professionals:     Profesionales y empresas
+    prices:
+      text: Precios
+    faq:
+      text: Preguntas Frecuentes
+    deals:
+      text: Ofertas
+    contact:
+      text: Contacto
