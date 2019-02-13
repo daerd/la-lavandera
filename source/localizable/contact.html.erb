@@ -10,43 +10,47 @@ breadcrumbs:
 		<div class="row">
 			<div class="col-sm-5 col-md-4 col-lg-4">
 				<p class="text-right">
-					Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+					<%= t('contact.intro') %>
 				</p>
 			</div>
+
 			<div class="col-sm-7 col-md-8 col-lg-7 col-lg-offset-1">
-				<!-- form-block -->
 				<form id="contact-form" class="boxed-form" name="contact-form" method="post" novalidate="novalidate">
 					<div id="success">
-						<p>Your message was sent successfully!</p>
+						<p><%= t('contact.messages.success') %></p>
 					</div>
 
 					<div id="error">
-						<p>Something went wrong, try refreshing and submitting the form again.</p>
+						<p><%= t('contact.messages.error') %></p>
 					</div>
 
 					<div class="row">
 						<div class="col-md-12 col-lg-6">
 							<div class="form-group">
-								<label class="control-label">Nombre</label>
+								<label class="control-label"><%= t('contact.form.fields.name') %></label>
 								<input class="form-control" type="text" value="" name="name">
 							</div>
 						</div>
+
 						<div class="col-md-12 col-lg-6">
 							<div class="form-group">
-								<label class="control-label">Teléfono / Email</label>
+								<label class="control-label"><%= t('contact.form.fields.phone_email') %></label>
 								<input class="form-control" type="text" value="" name="phone_email">
 							</div>
 						</div>
 					</div>
+
 					<div class="form-group">
-						<label class="control-label">Comentario</label>
+						<label class="control-label"><%= t('contact.form.fields.text') %></label>
 						<textarea class="form-control" rows="10" name="message"></textarea>
 					</div>
-					<button class="btn btn-default btn-top" type="submit" id="submit">ENVIAR</button>
+
+					<button class="btn btn-default btn-top" type="submit" id="submit"><%= t('contact.form.submit') %></button>
 				</form>
 			</div>
 		</div>
 	</div>
+
 	<div class="container-fluid content">
 		<div id="map"></div>
 	</div>
@@ -77,22 +81,26 @@ breadcrumbs:
 						minlength: 2
 					},
 					phone_email: {
-						required: true
+						required: true,
+						minlength: 5
 					},
 					message: {
-						required: true
+						required: true,
+						minlength: 5
 					}
 				},
 				messages: {
 					name: {
-						required: "Por favor, introduce tu nombre.",
-						minlength: "Tu nombre debe tener al menos 2 caracteres."
+						required: "<%= t('contact.messages.blank_name') %>",
+						minlength: "<%= t('contact.messages.short_name') %>"
 					},
 					phone_email: {
-						required: "Por favor, introduce tu teléfono o email."
+						required: "<%= t('contact.messages.blank_phone_email') %>",
+						minlength: "<%= t('contact.messages.short_phone_email') %>"
 					},
 					message: {
-						required: "Por favor, el mensaje."
+						required: "<%= t('contact.messages.blank_message') %>",
+						minlength: "<%= t('contact.messages.short_message') %>"
 					}
 				},
 				submitHandler: function (form) {

@@ -55,3 +55,6 @@ es:
       text: Ofertas
     contact:
       text: Contacto
+
+  footer:
+    contact_us: ¡Llámanos!

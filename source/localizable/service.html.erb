@@ -1,9 +1,9 @@
 <%
-# FIXME: Middleman ignores the "ignore" option (sic) in proxy pages and tries to build them too,
-#        so its necessary to capture exceptions to avoid it failing when trying to do it with no locals defined.
-begin
-	current_page.data.title       = "navigation.services.items.#{service}"
-	current_page.data.breadcrumbs = [ 'navigation.services.text', "navigation.services.items.#{service}" ]
+	# FIXME: Middleman ignores the "ignore" option (sic) in proxy pages and tries to build them too,
+	#        so its necessary to capture exceptions to avoid it failing when trying to do it with no locals defined.
+	begin
+		current_page.data.title       = "navigation.services.items.#{service}"
+		current_page.data.breadcrumbs = [ 'navigation.services.text', "navigation.services.items.#{service}" ]
 %>
 	<div class="page-content">
 		<div class="container">
@@ -17,9 +17,13 @@ begin
 
 					<div class="divider divider-47"></div>
 
-					<p><%= t("services.items.#{service}.text") %></p>
+					<%= raw t("services.items.#{service}.text") %>
 
 					<div class="text-center">
+						<a href="<%= link_path('prices') %>" class="contact-service btn btn-default btn-green btn-lg">
+							<%= t('services.prices') %>
+						</a>
+
 						<a href="<%= link_path('contact') %>" class="contact-service btn btn-default btn-green btn-lg">
 							<%= t('services.contact') %>
 						</a>
@@ -44,6 +48,6 @@ begin
 		<%= javascript_include_tag 'site' %>
 	<% end %>
 <%
-rescue
-end
+	rescue
+	end
 %>

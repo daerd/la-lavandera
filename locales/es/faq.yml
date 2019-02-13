@@ -1,0 +1,26 @@
+es:
+
+  faq:
+
+    title: Preguntas frecuentes
+    intro: ¿Alguna duda sobre nuestros servicios? ¡Este es tu lugar!
+
+    questions:
+
+      - question: ¿Cómo debo preparar la ropa para su recogida?
+        answer:   ¡De ninguna forma especial! Estamos aquí para hacerte la vida más sencilla. Simplemente mete toda la ropa en una bolsa de plástico y nosotros nos encargaremos de todo. No hace falta que la separes por colores y puedes meter también en bolsas los trajes o las camisas.
+
+      - question: ¿Qué pasa si llevo una prenda y se estropea?
+        answer:   No es algo que suela pasarnos, sabemos que cada prenda es especial. Si durante el proceso de limpieza sufre algún daño, no solo haremos todo lo posible por repararla, si no que también te devolveremos el importe de la limpieza y nos encargaremos de gestionar la indemnización correspondiente. Además te proporcionaremos un bono descuento para la próxima visita.
+
+      - question: ¿Cuánto tardáis en lavar la ropa?
+        answer:   El plazo estándar son 48 horas, pero si lo necesitas antes no dudes en contactarnos. Haremos todo lo posible para que tengas tus prendas justo a tiempo.
+
+      - question: ¿Cómo puedo saber cómo limpiar una prenda en concreto?
+        answer:   ¡La etiqueta es tu mayor aliada para esto! Puedes consultar nuestra guía de lectura para etiquetas o, si la has cortado, puedes venir a vernos para que te aconsejemos.
+
+      - question: ¿Podéis quitar todas las manchas?
+        answer:   ¡La mayoría! ¡Nos encantan los retos! Pero también somos realistas y, en el momento de la evaluación de la prenda, te daremos un pronóstico preciso de los resultados que puedes esperar tras la limpieza.
+
+      - question: ¿La ropa no encoje en la secadora?
+        answer:   ¡Si el proceso es el adecuado no tiene por qué! Nuestros profesionales se encargan de analizar cada prenda para secarla según indica el fabricante.

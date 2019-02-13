@@ -1,0 +1,22 @@
+es:
+
+  contact:
+
+    intro: Déjanos un mensaje con tu consulta o el servicio que necesitas y te contestaremos por correo electrónico o te llamaremos para concertar una recogida.
+
+    messages:
+      success:           Gracias por ponerte en contacto con nosotros.
+      error:             Ha ocurrido un problema enviando tu mensaje. Por favor, inténtalo de nuevo.
+      blank_name:        Por favor, escribe tu nombre.
+      short_name:        Por favor, comprueba que has escrito bien tu nombre.
+      blank_phone_email: Por favor, escribe un dato de contacto.
+      short_phone_email: Por favor, comprueba que has escrito bien el dato de contacto.
+      blank_message:     Por favor, escribe un mensaje.
+      short_message:     Por favor, escribe un mensaje un poco más largo.
+
+    form:
+      fields:
+        name:        Nombre
+        phone_email: Teléfono / Email
+        text:        Comentario
+      submit: ENVIAR

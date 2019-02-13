@@ -1,0 +1,95 @@
+es:
+
+  index:
+
+    featured_1:
+
+      contact_us: ¡Contáctanos!
+
+      item_1:
+        title: Lavandería
+        text:  Disfruta de tu tiempo libre, hacemos tu colada por muy poco.
+
+      item_2:
+        title: Packs de planchado
+        text:  Vestir impecable cuesta muy poco.
+
+      item_3:
+        title: Tintorería La Lavandera
+        text:  Cuidamos de tu ropa mejor que en casa.
+
+      item_4:
+        title: La Lavandera para empresas
+        text:  Apartamentos turísticos, spas, hoteles, oficinas, bufetes... ofrecemos servicios completamente adaptados a tu negocio.
+
+      item_5:
+        title: Servicio a domicilio gratuito
+        text:  Nos movemos por ti.
+
+    featured_2:
+
+      item_1:
+        title: Packs y ofertas
+        text:  ¿Sin tiempo para lavar y planchar? Consulta nuestras promociones. Para que tu mayor preocupación sea qué ponerte...
+
+      item_2:
+        title: Tarifas mensuales
+        text:  ¡Cubre con una reducida cuota todas tus necesidades en cuanto a lavandería! Pídenos más información.
+
+      item_3:
+        title: ¿No tienes sitio?
+        text:  Limpiamos tu alfombra y te la guardamos durante el tiempo que no la utilices. También ofrecemos servicio de almacenaje para edredones. Consulta disponibilidad.
+
+    choose_us:
+
+      title:  ¿Porqué elegirnos?
+      prices: Ver precios
+
+      item_1:
+        title: Experiencia personalizada
+        text:  Damos el mejor cuidado a tu ropa, adaptándonos tanto a las características de la prenda como a tus necesidades específicas.
+
+      item_2:
+        title: Precios asequibles
+        text:  Trabajamos siempre para ofrecerte la mejor calidad al mejor precio. Pregunta por nuestras promociones y ofertas.
+
+      item_3:
+        title: Comodidad
+        text:  Tu colada lista con una simple llamada. Disfruta de tu tiempo libre como tu quieras.
+
+      item_4:
+        title: Calidad
+        text:  Utilizamos productos profesionales de primera calidad, para darle a tus prendas favoritas la atención que requieren.
+
+      item_5:
+        title: Servicio a domicilio
+        text:  Con nuestro sistema de entrega y recogida a domicilio puedes disfrutar de nuestros servicios sin moverte de casa.
+
+      item_6:
+        title: Control de pedido
+        text:  Te mantendremos siempre informado del estado de tu pedido y te avisaremos cuando tus prendas estén listas.
+
+    steps:
+
+      title: Cómo funciona en 4 sencillos pasos
+
+      item_1:
+        title: Paso 1
+        text:  <span>Prepara</span> tu ropa sucia y llámanos al <span>#{phone}</span>.
+
+      item_1:
+        title: Paso 2
+        text:  <span>Recogemos</span> tu ropa.
+
+      item_1:
+        title: Paso 3
+        text:  <span>Limpiamos</span> tu ropa.
+
+      item_1:
+        title: Paso 4
+        text:  Te la <span>entregamos</span> limpia, planchada y lista para usar.
+
+    mission:
+
+      title: Nos apasiona nuestro trabajo
+      text:  Para nosotros, no solo es ropa. Es el día de tu boda, una fiesta inolvidable, el vestido de tus sueños, tu primer beso, la cazadora heredada de tu padre, su inseparable mantita de cuna, o incluso esa camisa que tanta suerte te trae en las entrevistas importantes.<br />Queremos ayudarte a conservar esas prendas especiales y hacerte la vida más fácil, para que puedas disfrutar de tu tiempo en casa sin tener que pensar en manchas que no salen, lavadoras o interminables horas de plancha.<br />En La Lavandera nos encargamos de todo, para que tu máxima preocupación sea qué ponerte.
