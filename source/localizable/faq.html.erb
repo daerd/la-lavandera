@@ -11,7 +11,7 @@ breadcrumbs:
 		<p class="text-center info-text"><%= t('faq.intro') %></p>
 	</div>
 
-	<div class="container offset-top50">
+	<div id="faq_questions" class="container offset-top50">
 		<% t('faq.questions').each do |q| %>
 			<div class="panel" role="tablist">
 				<div class="panel-heading" role="tab">
@@ -44,5 +44,5 @@ breadcrumbs:
 	<%= javascript_include_tag 'external/countto/jquery.countTo' %>
 	<%= javascript_include_tag 'external/form/jquery.form' %>
 	<%= javascript_include_tag 'external/form/jquery.validate.min' %>
-	<%= javascript_include_tag 'site' %>
+	<%= javascript_include_tag 'theme' %>
 <% end %>

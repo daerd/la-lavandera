@@ -75,17 +75,17 @@ es:
 
       item_1:
         title: Paso 1
-        text:  <span>Prepara</span> tu ropa sucia y llámanos al <span>#{phone}</span>.
+        text:  <span>Prepara</span> tu ropa sucia y llámanos al <span>%{phone}</span>.
 
-      item_1:
+      item_2:
         title: Paso 2
         text:  <span>Recogemos</span> tu ropa.
 
-      item_1:
+      item_3:
         title: Paso 3
         text:  <span>Limpiamos</span> tu ropa.
 
-      item_1:
+      item_4:
         title: Paso 4
         text:  Te la <span>entregamos</span> limpia, planchada y lista para usar.
 

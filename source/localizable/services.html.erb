@@ -1,0 +1,48 @@
+---
+title: navigation.services.text
+breadcrumbs:
+  - navigation.services.text
+---
+
+<div class="page-content">
+  <div class="container">
+    <h1 class="title-underline"><%= t('services.title') %></h1>
+
+    <p class="text-center info-text"><%= t('services.intro') %></p>
+  </div>
+
+  <div id="services" class="container offset-top50">
+    <% t('navigation.services.items').each do |service_key,service_title| %>
+      <div class="panel" role="tablist">
+        <div class="panel-heading" role="tab">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" href="#collapse-<%= t('navigation.services.items').keys.index(service_key) %>"><%= service_title %></a>
+          </h4>
+        </div>
+
+        <div id="collapse-<%= t('navigation.services.items').keys.index(service_key) %>" class="panel-collapse collapse" role="tabpanel">
+          <div class="panel-body">
+            <div class="panel-content">
+              <%= partial 'partials/services/service', locals: { service: service_key } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<% content_for :js_tags do %>
+  <!--[if lt IE 9]>
+    <%= javascript_include_tag 'js/html5shiv' %>
+    <%= javascript_include_tag 'js/respond.min' %>
+  <![endif]-->
+  <%= javascript_include_tag 'external/jquery/jquery.min' %>
+  <%= javascript_include_tag 'external/bootstrap/bootstrap.min' %>
+  <%= javascript_include_tag 'external/slick/slick.min' %>
+  <%= javascript_include_tag 'external/waypoints/jquery.waypoints.min' %>
+  <%= javascript_include_tag 'external/countto/jquery.countTo' %>
+  <%= javascript_include_tag 'external/form/jquery.form' %>
+  <%= javascript_include_tag 'external/form/jquery.validate.min' %>
+  <%= javascript_include_tag 'theme' %>
+<% end %>

@@ -2,6 +2,8 @@ es:
 
   services:
 
+    title:   Servicios
+    intro:   ¡Descubre cómo podemos hacer tu vida más fácil!
     contact: ¡Contáctanos!
 
     items:
@@ -9,18 +11,18 @@ es:
       dry_cleaning:
         title: Limpieza en seco
         text: |
-          <h2>¿Cuándo se debe aplicar la limpieza en seco?</h2>
+          <h2 class="inline-title">¿Cuándo se debe aplicar la limpieza en seco?</h2>
           <p>Antes de lavar una prenda en casa consulta siempre la etiqueta. Si una etiqueta indica limpieza en seco, todos los componentes de la prenda, como las hombreras, el forro, los botones o posibles aplicaciones) deberían mantenerse inalterables tras la limpieza.</p>
           <p>En el caso de fibras muy delicadas, como la seda y la lana de calidad, o si la prenda tiene muchas aplicaciones, bordados o detalles que podrían estropearse con el lavado tradicional con agua, también se aconseja lavarla en seco.</p>
-          <h2>¿Cuáles son las ventajas de la limpieza en seco?</h2>
+          <h2 class="inline-title">¿Cuáles son las ventajas de la limpieza en seco?</h2>
           <p>Con los lavados, las prendas pierden color, apresto y se desgastan, la limpieza en seco respeta más las fibras, logra que la ropa no encoja, mantiene el apresto de la prenda y conserva los colores.</p>
-          <h2>¿Qué es la limpieza en seco?</h2>
+          <h2 class="inline-title">¿Qué es la limpieza en seco?</h2>
           <p>En contra de lo que pueda indicar su nombre, la limpieza en seco no se hace únicamente con aire; sino que se emplean solventes líquidos específicos adaptados a cada tejido.</p>
-          <h2>¿Qué proceso se sigue?</h2>
+          <h2 class="inline-title">¿Qué proceso se sigue?</h2>
           <p>En primer lugar se repasa la prenda y se localizan todas las manchas. A continuación, se someten a un proceso de desmanchado con jabones líquidos específicos. Tras esto, la prenda debe reposar para que el producto haga su efecto. Finalmente, se lleva a cabo un proceso de secado específico en función del tipo de prenda y se procede al planchado.</p>
-          <h2>¿TIENES DUDAS?</h2>
+          <h2 class="inline-title">¿TIENES DUDAS?</h2>
           <p>Si no sabes si una prenda debe ser lavada en seco y le has quitado la etiqueta o tienes una prenda de lavado en seco que te gustaría poder lavar en casa, acércate a visitarnos y te aconsejaremos sobre el mejor tratamiento posible.</p>
-          <h2>¡NO TE ARRIESGUES!</h2>
+          <h2 class="inline-title">¡NO TE ARRIESGUES!</h2>
           <p>Lavar una prenda de limpieza en seco con agua podría estropearla (deformarla, desteñirla, encogerla...) y dejarla inservible. Si tienes dudas, consúltanos para que podamos asesorarte antes de que sea demasiado tarde.</p>
 
       ironing:
@@ -28,25 +30,25 @@ es:
         text: |
           <p>¿Usas camisas cada día pero no tienes tiempo para plancharlas? ¿No tienes sitio para tender y tus fundas nórdicas quedan completamente arrugadas? ¿Tienes dudas sobre cómo planchar una prenda correctamente para no estropearla?</p>
           <p>Consulta nuestros precios y packs de planchado. Te harán la vida más fácil.</p>
-          <h2>¡NO TE ARRIESGUES!</h2>
+          <h2 class="inline-title">¡NO TE ARRIESGUES!</h2>
           <p>Una mala temperatura de planchado podría marcar una prenda y estropearla para siempre.</p>
-          <h2>¿TIENES DUDAS?</h2>
+          <h2 class="inline-title">¿TIENES DUDAS?</h2>
           <p>Consúltanos. Te aconsejaremos la mejor forma de planchar esa prenda, o nos encargaremos de hacerlo nosotros mismos.</p>
 
       laundry:
         title: Lavandería
         text: |
           <p>Cada vez pasamos menos tiempo en casa, y este debería ser de calidad. No dediques tus fines de semana  a lavar y planchar tu ropa, deja que nosotros lo hagamos por muy poco.</p>
-          <h2>¿Cómo funciona?</h2>
+          <h2 class="inline-title">¿Cómo funciona?</h2>
           <p>Puedes acercarte a nuestro centro pero, si lo prefieres, puedes utilizar nuestro servicio de entrega y recogida a domicilio.</p>
           <ol>
             <li>Llámanos y dinos el sitio y la hora a la que quieres que vayamos a buscar la ropa.</li>
             <li>Recogida: nos llevamos la ropa y te damos una fecha de entrega.</li>
-            <li>Entrega: te llamamos para confirmar el lugar y la hora de entrega (¿en casa o en el trabajo?, tú eliges).</li>
+            <li>Entrega: te llamamos para confirmar el lugar y la hora de entrega (¿en casa o en el trabajo? tú eliges).</li>
           </ol>
           <p>Recogemos tu ropa y te la entregamos doblada y lista para utilizar.</p>
           <p>Nos encargamos de todo, para que tu mayor preocupación sea qué ponerte.</p>
-          <h2>¡NO TE ARRIESGUES!</h2>
+          <h2 class="inline-title">¡NO TE ARRIESGUES!</h2>
           <p>¿Tienes dudas sobre alguna prenda? No te arriesgues a estropearla. Puedes echar un vistazo a nuestra Guía de primeros auxilios para manchas difíciles o acércate para que podamos aconsejarte en persona.</p>
 
       carpets:
@@ -56,10 +58,10 @@ es:
           <p>Es recomendable aspirar las alfombras una vez a la semana (una vez al día con una aspiradora de mano, si se tienen mascotas, sería lo ideal) y, cada seis meses, someterlas a una limpieza a fondo realizada por un profesional para garantizar su buena conservación e higiene.</p>
           <p>De este modo, evitarás la acumulación excesiva de ácaros, bacterias, y suciedad y eliminarás la posible presencia de mohos.</p>
           <p>Cómodo y sencillo: recogemos y entregamos tu alfombra en casa, para que no tengas que preocuparte por nada.</p>
-          <h2>¿NO TIENES SITIO?</h2>
+          <h2 class="inline-title">¿NO TIENES SITIO?</h2>
           <p>¡Te la guardamos!</p>
           <p>Si prefieres solo lucir tu alfombra en invierno y no tienes sitio donde guardarla nosotros nos encargamos de almacenarla hasta que tú nos lo indiques.</p>
-          <h2>¡NO TE ARRIESGUES!</h2>
+          <h2 class="inline-title">¡NO TE ARRIESGUES!</h2>
           <p>Si has manchado tu alfombra... es mejor no arriesgar. Al intentar quitar la mancha podrías incrustarla un poco más. Intenta absorber al máximo la mancha con papel de cocina y ponte en contacto con nosotros para que acabemos el trabajo.</p>
           <p>¡No esperes mucho! La suciedad podría quedar fijada y estropearla definitivamente.</p>
 
@@ -67,14 +69,14 @@ es:
         title: Ropa de hogar
         text: |
           <p>Con el ritmo frenético del día a día, no siempre tenemos el tiempo necesario para lavar esas prendas de mayor tamaño que requieren una atención especial: mantas, cortinas, fundas de sofá, edredones..</p>
-          <h2>¿Por qué se deben limpiar con cierta frecuencia?</h2>
+          <h2 class="inline-title">¿Por qué se deben limpiar con cierta frecuencia?</h2>
           <p>El uso diario, sobre todo si hay animales de compañía en casa, hacen que estas prendas acumulen suciedad, ácaros y malos olores que, a menudo, pueden pasarnos inadvertidos pero que hacen que nuestra casa pierda su ambiente y frescura iniciales.</p>
           <p>Te recomendamos que, con el cambio de estaciones, realices una limpieza a fondo de todas estas prendas. Esto te permitirá que empiecen renovadas la nueva temporada y aportará un aire fresco y limpio a tu hogar.</p>
-          <h2>¿Por qué no debemos limpiar estas prendas en casa?</h2>
+          <h2 class="inline-title">¿Por qué no debemos limpiar estas prendas en casa?</h2>
           <p>Habitualmente, son prendas grandes y pesadas, que absorben mucha agua, lo que puede dañar el bombo de la lavadora.
           <p>Por otro lado, la exposición al sol y un mal lavado pueden dañar el tejido y los colores, dándole un aspecto desgastado y estropeándolos antes de tiempo.</p>
           <p>Al no tener las herramientas y los productos adecuados, el lavado en casa no garantiza la limpieza completa y la higiene de las prendas.</p>
-          <h2>¡NO TE ARRIESGUES!</h2>
+          <h2 class="inline-title">¡NO TE ARRIESGUES!</h2>
           <p>Confía en un servicio profesional para artículos tan específicos y de tanto valor. Nosotros te lo ponemos fácil: recogemos y entregamos la prenda donde mejor te venga.</p>
           <p>NO ESTROPEES TU ROPA DE CASA EXPONIÉNDOLA AL SOL O A UN MAL LAVADO, NI PIERDAS TIEMPO INNECESARIO EN UNA TAREA PESADA QUE TIENE FÁCIL SOLUCIÓN. ¿TE AYUDAMOS?</p>
 
@@ -84,7 +86,7 @@ es:
           <p>El cuero es un producto natural que requiere un mantenimiento. Debido a su porosidad, las manchas penetran en su interior rápidamente, por lo que es necesario actuar de forma rápida y precisa, adaptada al tipo de cuero.</p>
           <p>Como su nombre indica, las prendas de piel están hechas con la dermis de distintos animales, algunos ejemplos son: el nobuk, la carnaza, la gamuza, el cuero liso, el cuero de búfalo, el cuero rectificado o el charol. Cada uno tiene unas características específicas y requiere unos cuidados distintos.</p>
           <p>En La Lavandera, trabajamos con maestros especializados en el cuidado de prendas de piel que analizarán tanto el tipo de mancha como el tipo de cuero, para aplicarle el tratamiento más adecuado y devolverle el mejor aspecto posible a este material que, aunque es de naturaleza resistente, también es muy delicado ante las manchas.</p>
-          <h2>¡NO TE ARRIESGUES!</h2>
+          <h2 class="inline-title">¡NO TE ARRIESGUES!</h2>
           <p>Una prenda de piel puede durar muchos años si se le da el cuidado adecuado. Para ello, ponte en manos de profesionales.</p>
           <p>Algunos consejos de mantenimiento:</p>
           <ul>
@@ -101,7 +103,7 @@ es:
       delivery:
         title: A domicilio
         text: |
-          <h2>¿Cómo funciona?</h2>
+          <h2 class="inline-title">¿Cómo funciona?</h2>
           <p>Olvídate de ir de arriba para abajo con un saco de ropa sucia... ¡Nosotros vamos a donde tú estés!</p>
           <ol>
             <li>Llámanos y dinos el sitio y la hora a la que quieres que vayamos a buscar la ropa.</li>

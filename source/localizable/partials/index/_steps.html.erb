@@ -9,7 +9,7 @@
             <%= image_tag "img_icon_01.png", "class" => "img-responsive1" %>
           </div>
           <h6 class="description"><%= t("index.steps.item_1.title") %></h6>
-          <h4 class="title"><%= raw t("index.steps.item_1.text"), phone: t('global.phone')) %></h4>
+          <h4 class="title"><%= t("index.steps.item_1.text", phone: t('global.phone')).html_safe %></h4>
         </a>
 
         <a href="#" class="item animation" data-animation="fadeIn" data-animation-delay="0.25s">
@@ -17,7 +17,7 @@
             <%= image_tag "img_icon_02.png", "class" => "img-responsive1" %>
           </div>
           <h6 class="description"><%= t("index.steps.item_2.title") %></h6>
-          <h4 class="title"><%= raw t("index.steps.item_2.text") %></h4>
+          <h4 class="title"><%= t("index.steps.item_2.text").html_safe %></h4>
         </a>
 
         <a href="#" class="item animation" data-animation="fadeIn" data-animation-delay="0.5s">
@@ -25,7 +25,7 @@
             <%= image_tag "img_icon_03.png", "class" => "img-responsive1" %>
           </div>
           <h6 class="description"><%= t("index.steps.item_3.title") %></h6>
-          <h4 class="title"><%= raw t("index.steps.item_3.text") %></h4>
+          <h4 class="title"><%= t("index.steps.item_3.text").html_safe %></h4>
         </a>
 
         <a href="#" class="item animation" data-animation="fadeIn" data-animation-delay="0.75s">
@@ -33,7 +33,7 @@
             <%= image_tag "img_icon_04.png", "class" => "img-responsive1" %>
           </div>
           <h6 class="description"><%= t("index.steps.item_4.title") %></h6>
-          <h4 class="title"><%= raw t("index.steps.item_4.text") %></h4>
+          <h4 class="title"><%= t("index.steps.item_4.text").html_safe %></h4>
         </a>
       </div>
     </div>

@@ -23,11 +23,6 @@ end
 ### BUILD & DEPLOY ###
 
 configure :build do
-  activate :minify_css
-  activate :minify_javascript
-  activate :asset_hash
-  activate :minify_html
-
   activate :imageoptim do |options|
     options.manifest             = true # Use a build manifest to prevent re-compressing images between builds.
     options.skip_missing_workers = true # Silence problematic "image_optim" workers.
@@ -44,6 +39,11 @@ configure :build do
     options.pngout               = { copy_chunks: false, strategy: 0 }
     options.svgo                 = {}
   end
+
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+  activate :minify_html
 
   config[:php_files] = %w(index deals)
 end

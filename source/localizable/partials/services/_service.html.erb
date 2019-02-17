@@ -1,0 +1,27 @@
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="title-underline h-sm"><%= t("services.items.#{service}.title") %></h1>
+
+        <div>
+          <%= image_tag "services/#{service}.png", class: 'img-responsive' %>
+        </div>
+
+        <div class="divider divider-47"></div>
+
+        <%= t("services.items.#{service}.text").html_safe %>
+
+        <div class="text-center">
+          <a href="<%= link_path('prices') %>" class="contact-service btn btn-default btn-green btn-lg">
+            <%= t('navigation.prices.text') %>
+          </a>
+
+          <a href="<%= link_path('contact') %>" class="contact-service btn btn-default btn-green btn-lg">
+            <%= t('services.contact') %>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

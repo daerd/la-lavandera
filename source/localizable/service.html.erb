@@ -5,33 +5,8 @@
 		current_page.data.title       = "navigation.services.items.#{service}"
 		current_page.data.breadcrumbs = [ 'navigation.services.text', "navigation.services.items.#{service}" ]
 %>
-	<div class="page-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="title-underline h-sm"><%= t("services.items.#{service}.title") %></h1>
 
-					<div>
-						<%= image_tag "services/#{service}.png", class: 'img-responsive' %>
-					</div>
-
-					<div class="divider divider-47"></div>
-
-					<%= raw t("services.items.#{service}.text") %>
-
-					<div class="text-center">
-						<a href="<%= link_path('prices') %>" class="contact-service btn btn-default btn-green btn-lg">
-							<%= t('services.prices') %>
-						</a>
-
-						<a href="<%= link_path('contact') %>" class="contact-service btn btn-default btn-green btn-lg">
-							<%= t('services.contact') %>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<%= partial 'partials/services/service', locals: { service: service } %>
 
 	<% content_for :js_tags do %>
 		<!--[if lt IE 9]>
@@ -45,7 +20,7 @@
 		<%= javascript_include_tag 'external/countto/jquery.countTo' %>
 		<%= javascript_include_tag 'external/form/jquery.form' %>
 		<%= javascript_include_tag 'external/form/jquery.validate.min' %>
-		<%= javascript_include_tag 'site' %>
+		<%= javascript_include_tag 'theme' %>
 	<% end %>
 <%
 	rescue
