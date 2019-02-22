@@ -1,6 +1,6 @@
 module Helpers
   def layout_title
-    "#{t('global.name')} - #{t(current_page.data.title) || t('global.slogan')}"
+    "#{t('global.name')} - #{current_page.data.title.present? ? t(current_page.data.title) : t('global.slogan')}"
   end
 
   def link_path(link)

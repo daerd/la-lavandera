@@ -1,0 +1,4 @@
+@mixin media-xs { @media (max-width: $screen-xs-max) { @content; } }
+@mixin media-sm { @media (min-width: $screen-sm-min) { @content; } }
+@mixin media-md { @media (min-width: $screen-md-min) { @content; } }
+@mixin media-lg { @media (min-width: $screen-lg-min) { @content; } }
