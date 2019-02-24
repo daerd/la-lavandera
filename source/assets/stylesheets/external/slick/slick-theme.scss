@@ -7,7 +7,7 @@
 }
 .slick-loading .slick-list
 {
-    background: #fff image_url('external/slick/ajax-loader.gif') center center no-repeat;
+    background: #fff url('./../images/external/slick/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -17,8 +17,11 @@
     font-weight: normal;
     font-style: normal;
 
-    src: font-url('external/slick/slick.eot');
-    src: font-url('external/slick/slick.eot?#iefix') format('embedded-opentype'), font-url('external/slick/slick.woff') format('woff'), font-url('external/slick/slick.ttf') format('truetype'), font-url('external/slick/slick.svg#slick') format('svg');
+    src: url('./../fonts/external/slick/slick.eot');
+    src: url('./../fonts/external/slick/slick.eot?#iefix') format('embedded-opentype'),
+         url('./../fonts/external/slick/slick.woff') format('woff'),
+         url('./../fonts/external/slick/slick.ttf') format('truetype'),
+         url('./../fonts/external/slick/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,

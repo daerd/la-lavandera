@@ -2,11 +2,11 @@
   font-family: 'laundry';
   font-style: normal;
   font-weight: normal;
-  src: font-url('laundry/laundry.eot?3ys2y7');
-  src: font-url('laundry/laundry.eot?3ys2y7#iefix') format('embedded-opentype'),
-       font-url('laundry/laundry.ttf?3ys2y7') format('truetype'),
-       font-url('laundry/laundry.woff?3ys2y7') format('woff'),
-       font-url('laundry/laundry.svg?3ys2y7#laundry') format('svg');
+  src: url('./../fonts/laundry/laundry.eot?3ys2y7');
+  src: url('./../fonts/laundry/laundry.eot?3ys2y7#iefix') format('embedded-opentype'),
+       url('./../fonts/laundry/laundry.ttf?3ys2y7') format('truetype'),
+       url('./../fonts/laundry/laundry.woff?3ys2y7') format('woff'),
+       url('./../fonts/laundry/laundry.svg?3ys2y7#laundry') format('svg');
 }
 
 [class^="icon-"], [class*=" icon-"] {

@@ -412,7 +412,7 @@ a.read-more:hover {
 }
 
 .price-block .sale-label {
-  background: image_url('sale-label.png') no-repeat 0 0;
+  background: url('./../images/sale-label.png') no-repeat 0 0;
   background-size: cover;
   font-family: "Rubik",sans-serif;
   font-size: 24px;
@@ -1608,7 +1608,7 @@ header .box-location:before {
 }
 
 .box-step .item:after {
-  background: image_url('step-arrow1.png') no-repeat;
+  background: url('./../images/step-arrow1.png') no-repeat;
   background-size: cover;
   content: '';
   height: 100px;
@@ -1632,7 +1632,7 @@ header .box-location:before {
 }
 
 .box-step .item:nth-child(odd):after {
-  background: image_url('step-arrow2.png') no-repeat;
+  background: url('./../images/step-arrow2.png') no-repeat;
 }
 
 .box-step .item:nth-child(3):after {
@@ -4635,7 +4635,7 @@ blockquote .quote-author {
 }
 
 div[class^="bubble-"] {
-  background: image_url('bubble.png') no-repeat center center;
+  background: url('./../images/bubble.png') no-repeat center center;
   background-size: cover;
   border-radius: 50%;
   height: 1px;

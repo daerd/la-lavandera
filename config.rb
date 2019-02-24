@@ -7,8 +7,21 @@ config[:layout]            = 'layouts/site'
 config[:default_locale]    = :es
 config[:available_locales] = [ config[:default_locale], :en ]
 
+# I18n
 activate :i18n, mount_at_root: config[:default_locale], langs: config[:available_locales]
 I18n.load_path = Dir[Middleman::Application.root_path.join('locales', '**', '*.{yml}')]
+
+# Webpack.
+activate :external_pipeline,
+           name:    :webpack,
+           command: build? ? 'npm run build' : 'npm run start',
+           source:  '.tmp/webpack_output',
+           latency: 1
+
+config[:js_dir]     = 'assets/javascripts'
+config[:css_dir]    = 'assets/stylesheets'
+config[:fonts_dir]  = 'assets/fonts'
+config[:images_dir] = 'assets/images'
 
 ### DEVELOPMENT ###
 
