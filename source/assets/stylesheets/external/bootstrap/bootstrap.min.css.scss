@@ -1806,13 +1806,16 @@ transition:opacity .15s linear
   position:relative;
   height:0;
   overflow:hidden;
--webkit-transition:height .35s ease;
-transition:height .35s ease
+  -webkit-transition:height .35s ease;
+  transition:height .35s ease;
 }
 @font-face {
 font-family:"Glyphicons Halflings";
-src:url('./../fonts/glyphicons/glyphicons-halflings-regular.eot');
-src:url('./../fonts/glyphicons/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./../fonts/glyphicons/glyphicons-halflings-regular.woff') format('woff'), url('./../fonts/glyphicons/glyphicons-halflings-regular.ttf') format('truetype'), url('./../fonts/glyphicons/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg')
+src: url('./../fonts/external/glyphicons/glyphicons-halflings-regular.eot');
+src: url('./../fonts/external/glyphicons/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+     url('./../fonts/external/glyphicons/glyphicons-halflings-regular.woff') format('woff'),
+     url('./../fonts/external/glyphicons/glyphicons-halflings-regular.ttf') format('truetype'),
+     url('./../fonts/external/glyphicons/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 .glyphicon {
   position:relative;

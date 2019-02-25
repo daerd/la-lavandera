@@ -1,6 +1,8 @@
-var path              = require('path')
-var webpack           = require('webpack')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var path              = require('path');
+var webpack           = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const Clean = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -10,8 +12,13 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'assets/javascripts/[name].js',
+    filename: 'assets/javascripts/[name]-[hash].js',
     path:     path.resolve(__dirname, '.tmp/webpack_output')
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
   },
   module: {
     rules: [
@@ -27,7 +34,9 @@ module.exports = {
         test:  /\.s?[ac]ss$/,
         use:   ExtractTextPlugin.extract({
           use: [
-            'css-loader',
+            {
+              loader: 'css-loader'
+            },
             {
               loader: 'postcss-loader',
               options: {
@@ -39,7 +48,9 @@ module.exports = {
                 }
               }
             },
-            'sass-loader'
+            {
+              loader: 'sass-loader'
+            }
           ]
         })
       },
@@ -47,7 +58,7 @@ module.exports = {
         test: /\.(png|jp(e*)g|svg|gif|cur)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader:  'url-loader',
             options: {
               limit: 8000, // Converts images <8kb to Base64 strings.
               name:  'source/assets/images/[name]-[hash].[ext]'
@@ -69,6 +80,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new Clean([ '.tmp' ]),
     new ExtractTextPlugin({
       filename: 'source/assets/stylesheets/[name]-[hash].css'
     })
