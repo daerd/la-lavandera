@@ -3,7 +3,7 @@ es:
   prices:
 
     title: Nuestros precios
-    intro: Aprovéchate de nuestros precios y ofertas. Ahorrarás jabón, agua, electricidad y sobre todo tiempo para disfrutar haciendo lo que más te gusta. Estos precios incluyen desmanchado, lavado, planchado, embolsado e IVA.
+    intro: Aprovéchate de nuestros precios y ofertas. Ahorrarás jabón, agua, electricidad y sobre todo tiempo para disfrutar haciendo lo que más te gusta.
 
     featured:
       shirts:
@@ -16,7 +16,7 @@ es:
 
     list:
 
-      - title: Limpieza en seco
+      - title: Limpieza en seco (desmanchado, lavado, planchado, emperchado o empaquetado e IVA incluidos)
         items:
           - title: Camisa
             price: 3,50€
@@ -59,7 +59,7 @@ es:
           - title: Guantes
             price: 3,00€
 
-      - title: Planchado
+      - title: Planchado (emperchado e IVA incluidos)
         items:
           - title: Lote de 5 prendas
             price: 11,00€
@@ -106,16 +106,12 @@ es:
           - title: Bufanda
             price: 2,45€
 
-      - title: Lavandería
+      - title: Lavandería (lavado, secado, empaquetado e IVA incluidos)
         items:
-          - title: 5 kg
-            price: 8,00€
-          - title: 10 kg
-            price: 11,00€
-          - title: 15 kg
-            price: 16,00€
+          - title: Desde 1 kg
+            price: Desde 1,60€
 
-      - title: Alfombras
+      - title: Alfombras (incluye lavado, empaquetado e IVA)
         items:
           - title: Alfombra
             price: 8,20€ / m2
@@ -127,8 +123,10 @@ es:
             price: 19,00€ / m2
           - title: Kilim
             price: 12,35€ / m2
+          - title: Guardado en nuestros almacenes
+            price: ¡Gratis!
 
-      - title: Ropa de hogar
+      - title: Ropa de hogar (desmanchado, lavado, planchado, emperchado o empaquetado e IVA incluidos)
         items:
           - title: Edredón
             price: Desde 12,50€
@@ -151,7 +149,7 @@ es:
           - title: Mantel
             price: Desde 6,00€
 
-      - title: Limpieza de pieles
+      - title: Limpieza de pieles (tratamiento completo e IVA incluidos)
         items:
           - title: Americana
             price: Desde 32,60€
@@ -165,16 +163,18 @@ es:
             price: Desde 32,60€
           - title: Zapatos / Botas
             price: Desde 27,20€
+          - title: Otras prendas
+            price: ¡Consúltanos!
 
-      - title: Ofertas y promociones
+      - title: Ofertas y promociones (IVA incluido)
         items:
           - title: Pack ejecutivo (traje, camisa y corbata)
             price: 16,00€
-          - title: 3 Trajes - ¡Añade más por sólo 10,30 / unidad!
+          - title: 3 Trajes
             price: 30,90€
-          - title: 3 corbatas - ¡Añade más por sólo 3,00 / unidad!
+          - title: 3 corbatas
             price: 9,50€
-          - title: 3 camisas - ¡Añade más por sólo 3,00 / unidad!
+          - title: 3 camisas
             price: 9,00€
           - title: Bono de planchado - 5 prendas
             price: 11,00€

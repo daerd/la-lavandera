@@ -12,7 +12,7 @@ es:
         title: Limpieza en seco
         text: |
           <h2 class="inline-title">¿Cuándo se debe aplicar la limpieza en seco?</h2>
-          <p>Antes de lavar una prenda en casa consulta siempre la etiqueta. Si una etiqueta indica limpieza en seco, todos los componentes de la prenda, como las hombreras, el forro, los botones o posibles aplicaciones) deberían mantenerse inalterables tras la limpieza.</p>
+          <p>Antes de lavar una prenda en casa consulta siempre la etiqueta. Si una etiqueta indica limpieza en seco, todos los componentes de la prenda, como las hombreras, el forro, los botones o posibles aplicaciones, deberían mantenerse inalterables tras la limpieza.</p>
           <p>En el caso de fibras muy delicadas, como la seda y la lana de calidad, o si la prenda tiene muchas aplicaciones, bordados o detalles que podrían estropearse con el lavado tradicional con agua, también se aconseja lavarla en seco.</p>
           <h2 class="inline-title">¿Cuáles son las ventajas de la limpieza en seco?</h2>
           <p>Con los lavados, las prendas pierden color, apresto y se desgastan, la limpieza en seco respeta más las fibras, logra que la ropa no encoja, mantiene el apresto de la prenda y conserva los colores.</p>
@@ -42,14 +42,14 @@ es:
           <h2 class="inline-title">¿Cómo funciona?</h2>
           <p>Puedes acercarte a nuestro centro pero, si lo prefieres, puedes utilizar nuestro servicio de entrega y recogida a domicilio.</p>
           <ol>
-            <li>Llámanos y dinos el sitio y la hora a la que quieres que vayamos a buscar la ropa.</li>
+            <li>Llámanos: dinos el sitio y la hora a la que quieres que vayamos a buscar la ropa.</li>
             <li>Recogida: nos llevamos la ropa y te damos una fecha de entrega.</li>
             <li>Entrega: te llamamos para confirmar el lugar y la hora de entrega (¿en casa o en el trabajo? tú eliges).</li>
           </ol>
           <p>Recogemos tu ropa y te la entregamos doblada y lista para utilizar.</p>
           <p>Nos encargamos de todo, para que tu mayor preocupación sea qué ponerte.</p>
           <h2 class="inline-title">¡NO TE ARRIESGUES!</h2>
-          <p>¿Tienes dudas sobre alguna prenda? No te arriesgues a estropearla. Puedes echar un vistazo a nuestra Guía de primeros auxilios para manchas difíciles o acércate para que podamos aconsejarte en persona.</p>
+          <p>¿Tienes dudas sobre alguna prenda? No te arriesgues a estropearla. Llámanos o acércate para que podamos aconsejarte en persona.</p>
 
       carpets:
         title: Alfombras
@@ -59,8 +59,8 @@ es:
           <p>De este modo, evitarás la acumulación excesiva de ácaros, bacterias, y suciedad y eliminarás la posible presencia de mohos.</p>
           <p>Cómodo y sencillo: recogemos y entregamos tu alfombra en casa, para que no tengas que preocuparte por nada.</p>
           <h2 class="inline-title">¿NO TIENES SITIO?</h2>
-          <p>¡Te la guardamos!</p>
-          <p>Si prefieres solo lucir tu alfombra en invierno y no tienes sitio donde guardarla nosotros nos encargamos de almacenarla hasta que tú nos lo indiques.</p>
+          <p>¡Te la guardamos completamente!</p>
+          <p>Si prefieres solo lucir tu alfombra en invierno y no tienes sitio donde guardarla nosotros nos encargamos de almacenarla hasta que tú nos lo indiques, <strong>¡sin coste!</strong></p>
           <h2 class="inline-title">¡NO TE ARRIESGUES!</h2>
           <p>Si has manchado tu alfombra... es mejor no arriesgar. Al intentar quitar la mancha podrías incrustarla un poco más. Intenta absorber al máximo la mancha con papel de cocina y ponte en contacto con nosotros para que acabemos el trabajo.</p>
           <p>¡No esperes mucho! La suciedad podría quedar fijada y estropearla definitivamente.</p>
@@ -106,7 +106,7 @@ es:
           <h2 class="inline-title">¿Cómo funciona?</h2>
           <p>Olvídate de ir de arriba para abajo con un saco de ropa sucia... ¡Nosotros vamos a donde tú estés!</p>
           <ol>
-            <li>Llámanos y dinos el sitio y la hora a la que quieres que vayamos a buscar la ropa.</li>
+            <li>Llámanos: dinos el sitio y la hora a la que quieres que vayamos a buscar la ropa.</li>
             <li>Recogida: nos llevamos la ropa y te damos una fecha de entrega.</li>
             <li>Entrega: te llamamos para confirmar el lugar y la hora de entrega (¿en casa o en el trabajo? tú eliges).</li>
           </ol>
