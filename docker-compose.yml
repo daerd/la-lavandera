@@ -1,0 +1,22 @@
+version: '3'
+
+volumes:
+  bundle:
+
+services:
+
+  web:
+    build:    .
+    env_file: .env
+    command:  rake server
+    depends_on:
+      - bundle
+    ports:
+      - 4567:4567
+    volumes:
+      - bundle:/bundle
+
+  bundle:
+    image: busybox:1
+    volumes:
+      - bundle:/bundle

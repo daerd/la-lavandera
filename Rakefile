@@ -1,6 +1,6 @@
 desc 'Server run to preview the website.'
 task :server do
-  system('bundle exec middleman')
+  system('bundle exec middleman --bind-address 0.0.0.0')
 end
 
 desc 'Website generation into the /build path.'
