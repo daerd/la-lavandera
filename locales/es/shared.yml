@@ -13,12 +13,12 @@ es:
     linen:             ropa-de-hogar
     leather_and_suede: cuero-ante-y-otras-pieles
     shop:              tienda
-    delivery:          servicio-a-domicilio
+    delivery:          lavanderia-a-domicilio
     professionals:     profesionales-y-empresas
 
   global:
     name:   Tintorería La Lavandera
-    slogan: Cuidamos de tu ropa como en casa
+    slogan: Lavandería a domicilio - Servicio de tintorería a domicilio en Madrid
     address:
       line_1: Calle de Ascao 3
       line_2: 28017 Madrid

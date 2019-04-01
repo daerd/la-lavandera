@@ -1,6 +1,14 @@
 module Helpers
-  def layout_title
+  def page_title
     "#{t('global.name')} - #{current_page.data.title.present? ? t(current_page.data.title) : t('global.slogan')}"
+  end
+
+  def page_description
+    page_desc = t("page_descriptions.#{current_page.path}.keywords")
+    web_desc  = "#{t('page_descriptions.global.keywords')} - #{page_title}"
+
+    # Page and global description+keywords, converted to have only alphanumeric chars for SEO optimization.
+    I18n.transliterate("#{page_desc} #{web_desc}")
   end
 
   def link_path(link)

@@ -4,9 +4,14 @@ breadcrumbs:
   - navigation.services.text
 ---
 
+<% content_for :meta_tags do %>
+  <% # To avoid any SEO penalfy for having the same content as every service page. %>
+  <meta name="robots" content="noindex" />
+<% end %>
+
 <div class="page-content">
   <div class="container">
-    <h1 class="title-underline"><%= t('services.title') %></h1>
+    <h3 class="title-underline"><%= t('services.title') %></h3>
 
     <p class="text-center info-text"><%= t('services.intro') %></p>
   </div>

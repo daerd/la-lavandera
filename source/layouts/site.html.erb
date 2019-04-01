@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%= I18n.locale %>" xml:lang="<%= I18n.locale %>">
   <head>
-    <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <%= partial 'partials/shared/meta_tags' %>
     <%= favicon_tag 'images/favicon.ico' %>
-    <title><%= layout_title %></title>
+    <title><%= page_title %></title>
     <%= javascript_include_tag 'site' %>
     <%= stylesheet_link_tag 'site' %>
     <%= yield_content :css_tags %>

@@ -1,0 +1,11 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+
+<meta name="description" content="<%= page_description %>">
+<meta name="author" content="<%= page_title %>">
+
+<meta name="geo.position" content="<%= config[:gmaps_lat] %>; <%= config[:gmaps_lng] %>">
+<meta name="geo.placename" content="<%= page_title %>">
+
+<%= yield_content :meta_tags %>

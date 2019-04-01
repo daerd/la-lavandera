@@ -168,9 +168,12 @@ img {
   margin-top: 15px;
 }
 
-h1, h2 {
+h2, h3 {
   color: #454545;
   font-family: "Rubik",sans-serif;
+}
+
+h3 {
   font-size: 38px;
   font-weight: normal;
   line-height: 40px;
@@ -178,20 +181,17 @@ h1, h2 {
   text-transform: uppercase;
 }
 
-h1.h-sm {
-  font-size: 30px;
+h3.h-sm {
+  font-size: 32px;
   line-height: 36px;
 }
 
-h1.title-underline, h2.title-underline {
+h3.title-underline {
   padding: 0 0 77px 0;
-}
-
-h1.title-underline, h2.title-underline {
   text-align: center;
 }
 
-h1.title-underline:after, h2.title-underline:after {
+h3.title-underline:after {
   background: $color-3;
   content: '';
   display: block;
@@ -204,57 +204,30 @@ h1.title-underline:after, h2.title-underline:after {
 }
 
 @media (max-width:577px) {
-  h1.title-underline, h2.title-underline {
+  h3.title-underline {
     font-size: 24px;
     line-height: 27px;
     padding: 0 0 60px 0;
   }
 
-  h1.title-underline:after, h2.title-underline:after {
+  h3.title-underline:after {
     margin-top: 24px;
   }
 }
 
-h1.title-underline.text-left, h2.title-underline.text-left {
+h3.title-underline.text-left {
   text-align: left;
 }
 
-h1.title-underline.text-right, h2.title-underline.text-right {
+h3.title-underline.text-right {
   text-align: right;
-}
-
-h3 {
-  font-family: "Rubik",sans-serif;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 30px;
-  margin: 0;
-  padding: 0;
 }
 
 h4 {
   font-family: "Rubik",sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 400;
   line-height: 28px;
-  margin: 0;
-  padding: 0;
-}
-
-h5 {
-  font-family: "Rubik",sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 0;
-  padding: 0;
-}
-
-h6 {
-  font-family: "Lato",sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
   margin: 0;
   padding: 0;
 }
@@ -676,7 +649,7 @@ a.read-more:hover {
 
 .logo {
   display: inline-block;
-  margin: 25px 0 0 0;
+  margin: 0;
   position: relative;
 }
 
@@ -699,6 +672,12 @@ a.read-more:hover {
   }
 }
 
+.slogan {
+  font-size: 11px;
+  margin: 0 0 20px 0;
+  color: $color-3;
+}
+
 header .box-location {
   font-size: 18px;
   font-weight: 400;
@@ -709,7 +688,6 @@ header .box-location {
 }
 
 header .box-location:before {
-  color: red;
   color: $color-3;
   content: "\e908";
   display: inline-block;
@@ -748,7 +726,7 @@ header .box-location:before {
   top: 7px;
 }
 
-.box-telephone address {
+.box-telephone .data {
   font-family: "Rubik",sans-serif;
   font-size: 29px;
   font-style: normal;
@@ -756,7 +734,7 @@ header .box-location:before {
   margin: 0;
 }
 
-.box-telephone address .icon {
+.box-telephone .data .icon {
   color: $color-3;
   font-size: 18px;
   line-height: 24px;
@@ -768,7 +746,7 @@ header .box-location:before {
     font-size: 14px;
   }
 
-  .box-telephone address {
+  .box-telephone .data {
     font-size: 20px;
   }
 }
@@ -785,13 +763,13 @@ header .box-location:before {
     display: none;
   }
 
-  .box-telephone address {
+  .box-telephone .data {
     font-size: 24px;
   }
 }
 
 @media (max-width:375px) {
-  .box-telephone address {
+  .box-telephone .data {
     padding: 0 0 0 40px;
   }
 }
@@ -1579,7 +1557,7 @@ header .box-location:before {
   padding: 29px 0 18px 0;
 }
 
-.box-step h2 {
+.box-step h3 {
   margin-bottom: 41px;
   padding: 0 15px;
   text-align: center;
@@ -2954,13 +2932,13 @@ form label.error {
   }
 }
 
-#modalOrder h2 {
+#modalOrder h3 {
   margin-bottom: 40px;
   padding-bottom: 0;
 }
 
 @media (max-width:767px) {
-  #modalOrder h2 {
+  #modalOrder h3 {
     margin-bottom: 25px;
   }
 }
@@ -3640,7 +3618,7 @@ footer .copyright-box {
   margin-bottom: 60px;
 }
 
-.side-block h3 {
+.side-block h4 {
   margin-bottom: 18px;
   text-transform: uppercase;
 }

@@ -1,0 +1,23 @@
+es:
+
+  page_descriptions:
+
+    keywords:
+
+      global: lavanderia a domicilio, tintoreria en madrid, tintoreria a domicilio, lavanderia en madrid
+
+      pages:
+        contact:           telefono, llamar, contactar, contacto
+        deals:             ofertas, descuento, planchado, lavado, cupon, codigo
+        faq:               como lavar, como limpiar, preguntas frecuentes, dudas tintoreria,
+        prices:            precios tintoreria, tarifas, precio lavar, precio limpiar, precio planchar
+        services:          '' # Empty as the page has a "noindex" directive.
+        dry_cleaning:      limpieza en seco, lavado en seco, tintoreria en seco, lavanderia en seco, lavar en seco
+        ironing:           planchado, plancha, planchar ropa, servicio planchado, como planchar
+        laundry:           lavanderia, lavar ropa, lavado, como lavar, como limpiar
+        carpets:           alfombras, moquetas, lavar alfombra, como limpiar alfombra, limpieza de alfombras, limpiar moqueta
+        linen:             sabanas, mantas, edredones, manteles, ropa de cama, ropa de hogar
+        leather_and_suede: cuero, ante, polipiel, piel, limpiar sofa, limpiar chaqueta, limpiar asiento, como lavar piel
+        shop:              tienda, productos tintoreria, productos lavanderia, detergente, suavizante
+        delivery:          servicio a domicilio, servicio urgente, servicio a casa, transporte a casa
+        professionals:     profesionales, empresas, mayoristas, hoteles, pisos, restaurantes, residencias, escuelas
