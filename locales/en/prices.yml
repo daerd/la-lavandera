@@ -1,0 +1,188 @@
+en:
+
+  prices:
+
+    title: Our prices
+    intro: Take advantage of our prices and offers. You will save soap, water, electricity and above all time to enjoy doing what you like the most.
+
+    featured:
+      shirts:
+        title: Shirts from <span class=\"base-color\">3€</span>
+      laundry:
+        title: Laundry from <span class=\"base-color\">1,06€</span>
+      delivery:
+        title: Home delivery... <span class=\"base-color\">¡free!</span>
+        info:  "Minimum order: 20€"
+
+    list:
+
+      - title: Dry cleaning (stain removal, washing, ironing, packaging and VAT included)
+        items:
+          - title: Shirt
+            price: 3,50€
+          - title: Blouse
+            price: 5,50€
+          - title: Polo shirt
+            price: 3,50€
+          - title: T-Shirts
+            price: 3,25€
+          - title: Tie
+            price: 3,50€
+          - title: Vest
+            price: 5,10€
+          - title: Suit
+            price: 12,25€
+          - title: Blazer / Jacket
+            price: 7,25€
+          - title: Trousers
+            price: 5,50€
+          - title: Skirt
+            price: 5,50€
+          - title: Dress
+            price: From 9,95€
+          - title: Jumper
+            price: 5,35€
+          - title: Jacket
+            price: 10,95€
+          - title: Coat
+            price: 11,75€
+          - title: Down jacket
+            price: 16,90€
+          - title: Rain coat
+            price: From €12.30
+          - title: Handkerchief
+            price: 3,20€
+          - title: Foulard
+            price: 4,95€
+          - title: Scarf
+            price: 3,50€
+          - title: Gloves
+            price: 3,00€
+
+      - title: Ironing (VAT included)
+        items:
+          - title: 5 item set
+            price: 11,00€
+          - title: 10 item set
+            price: 20,00€
+          - title: 15 item set
+            price: 26,00€
+          - title: 20 item set
+            price: 33,00€
+          - title: 25 item set
+            price: 40,00€
+          - title: Shirt
+            price: 2,45€
+          - title: Blouse
+            price: 3,85€
+          - title: Polo shirt
+            price: 2,70€
+          - title: T-Shirts
+            price: 2,30€
+          - title: Tie
+            price: 2,80€
+          - title: Vest
+            price: 3,55€
+          - title: Suit
+            price: 8,60€
+          - title: Blazer / Jacket
+            price: 5,10€
+          - title: Trousers
+            price: 3,85€
+          - title: Skirt
+            price: 3,85€
+          - title: Dress
+            price: From €6.75
+          - title: Jumper
+            price: 3,75€
+          - title: Jacket
+            price: 7,65€
+          - title: Coat
+            price: 9,05€
+          - title: Rain coat
+            price: From €8.61
+          - title: Foulard
+            price: 3,47€
+          - title: Scarf
+            price: 2,45€
+
+      - title: Laundry (washing, drying, packaging and VAT included)
+        items:
+          - title: From 1 kg
+            price: From 1,60€
+
+      - title: Carpets (includes washing, packaging and VAT)
+        items:
+          - title: Carpet
+            price: 8,20€ / m2
+          - title: Jarapa carpet
+            price: 8,20€ / m2
+          - title: Oriental carpet
+            price: 10,95€ / m2
+          - title: Leather Carpet
+            price: 19,00€ / m2
+          - title: Kilim
+            price: 12,35€ / m2
+          - title: Stored in our warehouses
+            price: Free of charge!
+
+      - title: Household linen (stain removal, washing, ironing, packaging and VAT included)
+        items:
+          - title: Duvet
+            price: From €12.50
+          - title: Feather duvet
+            price: From €14.95
+          - title: Quilt
+            price: From 14,85€
+          - title: Duvet cover set
+            price: From €12.35
+          - title: Set of sheets
+            price: From 10,25€
+          - title: Blanket
+            price: From 9,95€
+          - title: Sofa cover
+            price: From 19,60€
+          - title: Curtain
+            price: From 4,45€ / m2
+          - title: Net curtain
+            price: From 2,80€ / m2
+          - title: Tablecloth
+            price: From 6,00€
+
+      - title: Leather cleaning (complete treatment and VAT included)
+        items:
+          - title: Blazer
+            price: From 32,60€
+          - title: Barbour jacket
+            price: 43,50€
+          - title: Handbag
+            price: From 38,10€
+          - title: Jacket
+            price: From 36,00€
+          - title: Jacket
+            price: From 32,60€
+          - title: Shoes / Boots
+            price: From 27,20€
+          - title: Other items
+            price: Ask us!
+
+      - title: Offers and promotions (VAT included)
+        items:
+          - title: Executive pack (suit, shirt and tie)
+            price: 16,00€
+          - title: 3 Suits
+            price: 30,90€
+          - title: 3 ties
+            price: 9,50€
+          - title: 3 shirts
+            price: 9,00€
+          - title: Ironing pack - 5 items
+            price: 11,00€
+          - title: Ironing pack - 10 items
+            price: 20,00€
+          - title: Ironing pack - 15 items
+            price: 26,00€
+          - title: Ironing pack - 20 items
+            price: 33,00€
+          - title: Ironing pack - 25 items
+            price: 40,00€

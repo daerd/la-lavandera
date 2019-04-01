@@ -2,24 +2,24 @@ en:
 
   paths:
     contact:           contact
-    faq:               faq
+    faq:               frequently-asked-questions
     prices:            prices
     services:          services
     dry_cleaning:      dry-cleaning
     ironing:           ironing
     laundry:           laundry
     carpets:           carpets
-    linen:             linen
-    leather_and_suede: leader-and-suede
+    linen:             household-linen
+    leather_and_suede: leather-suede-and-other-furs
     shop:              shop
-    delivery:          delivery
-    professionals:     professionals
+    delivery:          home-delivery
+    professionals:     professionals-and-companies
 
   global:
-    name:   Tintorería La Lavandera
-    slogan: Cuidamos de tu ropa como en casa
+    name:   La Lavandera
+    slogan: We take care of your clothes better than your mum!
     address:
-      line_1: Calle de Ascao 3
+      line_1: Street of Ascao 3
       line_2: 28017 Madrid
     phone: 91 408 18 64
     schedule:
@@ -30,26 +30,29 @@ en:
     change_locale:  English version
 
   layout:
-    title: Tintorería La Lavandera
+    title: La Lavandera
 
   navigation:
     home:
-      text: Inicio
+      text: Home
     services:
-      text: Servicios
+      text: Services
       items:
-        dry_cleaning:      Limpieza en seco
-        ironing:           Planchado
-        laundry:           Lavandería
-        carpets:           Alfombras
-        linen:             Ropa de hogar
-        leather_and_suede: Cuero, ante y otras pieles
-        shop:              Tienda
-        delivery:          A domicilio
-        professionals:     Profesionales y empresas
+        dry_cleaning:      Dry Cleaning
+        ironing:           Ironing
+        laundry:           Laundry
+        carpets:           Carpets
+        linen:             Household linen
+        leather_and_suede: Leather, suede and other furs
+        shop:              Shop
+        delivery:          Home delivery
+        professionals:     Professionals and companies
     prices:
-      text: Precios
+      text: Prices
     faq:
-      text: Preguntas Frecuentes
+      text: Frequently Asked Questions
     contact:
-      text: Contacto
+      text: Contact us
+
+  footer:
+    contact_us: Call us!

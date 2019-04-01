@@ -1,0 +1,23 @@
+en:
+
+  page_descriptions:
+
+    keywords:
+
+      global: laundry, delivery madrid
+
+      pages:
+        contact:           contact
+        deals:             deals
+        faq:               faq
+        prices:            prices
+        services:          '' # Empty as the page has a "noindex" directive.
+        dry_cleaning:      dry cleaning
+        ironing:           ironing
+        laundry:           laundry
+        carpets:           carpets
+        linen:             linen
+        leather_and_suede: leather, suede
+        shop:              shop
+        delivery:          delivery
+        professionals:     professionals

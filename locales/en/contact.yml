@@ -1,0 +1,23 @@
+en:
+
+  contact:
+
+    title: Contact us
+    intro: Leave us a message with your query or the service you need and we will answer you by email or call you to arrange the collection.
+
+    messages:
+      success:           Thank you for contacting us.
+      error:             An error has occurred while sending your message. Please try again.
+      blank_name:        Please write your name.
+      short_name:        Please make sure you have spelt your name right.
+      blank_phone_email: Please enter your contact details.
+      short_phone_email: Please check that you have typed the contact information correctly.
+      blank_message:     Please write a message.
+      short_message:     Please write a slightly longer message.
+
+    form:
+      fields:
+        name:        First name
+        phone_email: Phone / Email
+        text:        Comment
+      submit: SEND

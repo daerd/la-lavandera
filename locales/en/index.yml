@@ -1,0 +1,95 @@
+en:
+
+  index:
+
+    featured_1:
+
+      contact_us: Contact us!
+
+      item_1:
+        title: Laundry
+        text:  Enjoy your free time, we do your laundry for very little.
+
+      item_2:
+        title: Ironing Packs
+        text:  It costs very little to dress impeccably.
+
+      item_3:
+        title: La Lavandera
+        text:  We take care of your clothes better than your mum!
+
+      item_4:
+        title: La Lavandera for companies
+        text:  Tourist apartments, spas, hotels, offices, law firms... we offer services completely adapted to your business.
+
+      item_5:
+        title: Free home delivery
+        text:  We'll come to you.
+
+    featured_2:
+
+      item_1:
+        title: Packs and offers
+        text:  No time to wash and iron? Check out our promotions. So that your main concern is what to wear...
+
+      item_2:
+        title: Always in a suit?
+        text:  Pay monthly and always have your suits ready to go! Ask us for more information.
+
+      item_3:
+        title: Not enough space?
+        text:  We clean your carpet and store it for as long as you don't use it. We also offer storage service for duvets. Check availability.
+
+    choose_us:
+
+      title:  Why choose us?
+      prices: See prices
+
+      item_1:
+        title: Personalized experience
+        text:  We take the best care of your clothes, adapting ourselves to the characteristics of the garment as well as to your specific needs.
+
+      item_2:
+        title: Affordable prices
+        text:  We always work to offer you the best quality at the best price. Ask us about our promotions and offers.
+
+      item_3:
+        title: Comfort
+        text:  Your laundry is ready with a simple call. Enjoy your free time.
+
+      item_4:
+        title: Quality
+        text:  We use top quality professional products to give your favorite clothes the attention they require.
+
+      item_5:
+        title: Home Service
+        text:  With our home delivery and collection option you can enjoy our services without leaving home.
+
+      item_6:
+        title: Order status
+        text:  We will always keep you informed of the status of your order and will let you know when your clothes are ready.
+
+    steps:
+
+      title: How it works in 4 easy steps
+
+      item_1:
+        title: Step 1
+        text:  <span>Prepare </span> your dirty laundry and call us at <span>%{phone}</span>.
+
+      item_2:
+        title: Step 2
+        text:  <span>We pick up </span> your clothes.
+
+      item_3:
+        title: Step 3
+        text:  <span>We clean </span>your clothes.
+
+      item_4:
+        title: Step 4
+        text:  We <span>deliver </span> them clean, ironed and ready to use.
+
+    mission:
+
+      title: We are passionate about our work
+      text:  For us, it's not just clothes. It's your wedding day, an unforgettable party, the dress of your dreams, the jacket inherited from your father, or even that shirt that brings you so much luck in important interviews.<br />We want to help you take care of those special clothes and make your life easier, so you can enjoy your time at home without having to think about stains that do not come out, washing machines or endless hours of ironing.<br />In La Lavandera we take care of everything, so that your main concern is what to wear.
