@@ -10,6 +10,7 @@ RUN apk add --update --no-cache \
       openssh \
       npm \
       nodejs \
+      lftp \
     && rm -rf /var/cache/apk/*
 
 # Creates the project's main path and sets it as the current directory.
