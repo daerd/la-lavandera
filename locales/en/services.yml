@@ -11,33 +11,33 @@ en:
       dry_cleaning:
         title: Dry Cleaning
         text: |
-            <h2 class="inline-title">When should dry cleaning be used?</h2>
+            <h4 class="inline-title">When should dry cleaning be used?</h4>
             <p>Before washing an item of clothing at home always read the label. If a label indicates dry cleaning, all parts of the clothing, such as shoulder pads, lining, buttons or possible applications, should remain unaltered after cleaning.</p>
             <p>In the case of very delicate fibers, such as silk and quality wool, or if the item has embroidery or details that could be damaged by traditional water washing, dry cleaning is also advisable.</p>
-            <h2 class="inline-title">What are the advantages of dry cleaning?</h2>
+            <h4 class="inline-title">What are the advantages of dry cleaning?</h4>
             <p>With water washing, clothes lose colour, starch and wear down. Dry cleaning takes more care of the fibers, ensures that clothes do not shrink and retains colours.</p>
-            <h2 class="inline-title">What is dry cleaning?</h2>
+            <h4 class="inline-title">What is dry cleaning?</h4>
             <p>Contrary to what the name may indicate, dry cleaning is not only done with air; specific liquid solvents adapted to each fabric are used.</p>
-            <h2 class="inline-title">What process is followed?</h2>
+            <h4 class="inline-title">What process is followed?</h4>
             <p>First, the items are reviewed and all stains are located. They then undergo a stain removal process with specific liquid soaps. After this, the items must rest so the product can take effect. Finally, a specific drying process is carried out depending on the type of clothes, then the items are ironed.</p>
-            <h2 class="inline-title">Doubtful?</h2>
+            <h4 class="inline-title">Doubtful?</h4>
             <p>If you don't know if an item of clothing should be dry-cleaned and you have removed the label or if you have a dry-cleaning item that you would like to be able to wash at home, come visit us and we will advise.</p>
-            <h2 class="inline-title">DON'T RISK IT!</h2>
+            <h4 class="inline-title">Don't risk it!</h4>
             <p>Washing a dry cleaning item of clothing with water could damage it (deform it, bleach it, shrink it...) and leave it useless. If you have any doubts, please contact us so that we can advise you before it is too late.</p>
       ironing:
         title: Ironing
         text: |
-            <p>Do you wear shirts every day but don't have time to iron them? You don´t have enough room to dry your duvet covers and always end up completely wrinkled? Do you have doubts about how to iron your clothes correctly so as not to damage them?</p>
+            <p>Do you wear shirts every day but don't have time to iron them? You don't have enough room to dry your duvet covers and always end up completely wrinkled? Do you have doubts about how to iron your clothes correctly so as not to damage them?</p>
             <p>Check out our prices and ironing packs. They'll make your life easier.</p>
-            <h2 class="inline-title">DON'T RISK IT!</h2>
+            <h4 class="inline-title">Don't risk it!</h4>
             <p>The wrong temperature when ironing can damage your clothes and ruin them forever.</p>
-            <h2 class="inline-title">Doubtful?</h2>
+            <h4 class="inline-title">Doubtful?</h4>
             <p>Ask us. We'll advise you on the best way to iron your clothes, or we'll do it ourselves.</p>
       laundry:
         title: Laundry
         text: |
             <p>Never at home! But when you are you should have quality time. Don't spend your weekends washing and ironing your clothes, let us do it for you.</p>
-            <h2 class="inline-title">How does it work?</h2>
+            <h4 class="inline-title">How does it work?</h4>
             <p>You can come to our center but, if you prefer, you can use our home delivery and collection service.</p>
             <ol>
               <li>Call us: tell us where and when you want us to go get the clothes.</li>
@@ -46,7 +46,7 @@ en:
             </ol>
             <p> We pick up your clothes and deliver them folded and ready to wear.</p>
             <p>We take care of everything, so that your main concern is what to wear.</p>
-            <h2 class="inline-title">DON'T RISK IT!</h2>
+            <h4 class="inline-title">Don't risk it!</h4>
             <p>Do you have doubts about any item of clothing? Don't risk ruining it. Call or come to see us so that we can advise you.</p>
       carpets:
         title: Carpets
@@ -55,33 +55,33 @@ en:
             <p>It is advisable to vacuum carpets once a week (once a day with a hand-held vacuum cleaner if you have pets would be ideal) and, every six months, to have them thoroughly cleaned by an expert to ensure good maintenance and hygiene.</p>
             <p>By doing so, you will avoid excessive accumulation of dust mites, bacteria, and dirt and eliminate the possible presence of mold.</p>
             <p>Comfortable and simple: we pick up and deliver your rugs at home, so you don't have to worry about anything.</p>
-            <h2 class="inline-title">NOT ENOUGH ROOM?</h2>
+            <h4 class="inline-title">Not enough room?</h4>
             <p>We store it for you!</p>
             <p>If you prefer to show off your carpet in winter and you don't have a place to store it, we will keep it until you tell us, <strong> at no extra cost!</strong></p>
-            <h2 class="inline-title">DON'T RISK IT!</h2>
+            <h4 class="inline-title">Don't risk it!</h4>
             <p>If you have stains on your carpet... it is better not to risk cleaning it yourself. By trying to remove the stain you could embed it. Try to absorb the stain as much as possible with kitchen paper and get in touch with us so we can finish the job.</p>
             <p>Don't wait too long! The dirt could get fixed and permanently damage the carpet.</p>
       linen:
         title: Household linen
         text: |
             <p>With the hectic pace of everyday life, we don't always have the time to wash those larger items that require special attention: blankets, curtains, sofa covers, quilts...</p>
-            <h2 class="inline-title">Why should they be cleaned frequently?</h2>
+            <h4 class="inline-title">Why should they be cleaned frequently?</h4>
             <p>Daily use can, especially if there are pets at home, make these items accumulate dirt, mites and bad smells that can often go unnoticed but make our homes lose their freshness.</p>
             <p>We recommend that, with the change of seasons, you thoroughly clean of all these items. This will allow you to start the new season with a fresh and clean home.</p>
-            <h2 class="inline-title">Why shouldn't we clean these items at home?</h2>
+            <h4 class="inline-title">Why shouldn't we clean these items at home?</h4>
             <p>They are usually large. Heavy items that absorb a lot of water, which can damage the washing machine drum.
             <p>Also, exposure to the sun and bad washing can damage the fabric and colours, giving it a worn appearance.</p>
             <p>Not having the right tools and products, washing at home does not guarantee complete cleanliness and hygiene of clothes.</p>>
-            <h2 class="inline-title">DON'T RISK IT!</h2>
+            <h4 class="inline-title">Don't risk it!</h4>
             <p>You can rely on our professional service for your specific and valuable items. We make it easy for you: we pick up and deliver your items when and where it best suits you.</p>
-            <p>DON'T RUIN YOUR RUGS, CURTAINS,SOFA COVERS... EXPOSING THEM TO THE SUN OR INCORRECT CLEANING PROCESSES, DON’T WASTE YOUR TIME UNNECESSARILY WITH HEAVY TASKS THAT HAVE AN EASY SOLUTION. DO YOU NEED HELP?</p>
+            <p>Don't ruin your rugs, curtains or sofa covers exposing them to the sun or incorrect cleaning processes. Don't waste your time unnecessarily with heavy tasks that have an easy solution. Do you need help?</p>
       leather_and_suede:
         title: "Leather, suede and other furs"
         text: |
             <p>Leather is a natural product that requires maintenance. Due to its porosity, stains can penetrate quickly, so it is necessary to act quickly and accurately, with specific treatments for each type of leather.</p>>
             <p>As the name suggests, leather items are made with the dermis of different animals, some examples are: nobuk, suede, smooth leather, buffalo leather, rectified leather or patent leather. Each has specific characteristics and requires different care.</p>
             <p>In La Lavandera, we work with experts specialized in the care of leather items who will analyze both the type of stain and the type of leather, in order to apply the most appropriate treatment and return the best possible appearance to this material.</p>
-            <h2 class="inline-title">DON'T RISK IT!</h2>
+            <h4 class="inline-title">Don't risk it!</h4>
             <p>A leather garment can last for many years if properly maintained. In order to do so, leave it to the professionals!</p>
             <p>Some maintenance tips:</p>
             <ul>
@@ -96,7 +96,7 @@ en:
       delivery:
         title: Home delivery
         text: |
-            <h2 class="inline-title">How does it work?</h2>
+            <h4 class="inline-title">How does it work?</h4>
             <p>Forget going up and down with a bag of dirty clothes... We go where you are!</p>>
             <ol>
               <li>Call us: tell us where and when you want us to go get the clothes.</li>

@@ -5,7 +5,7 @@ module Helpers
 
   def page_description
     page_desc = t("page_descriptions.#{current_page.path}.keywords")
-    web_desc  = "#{t('page_descriptions.global.keywords')} - #{page_title}"
+    web_desc  = "#{t('page_descriptions.keywords.global')} - #{page_title}"
 
     # Page and global description+keywords, converted to have only alphanumeric chars for SEO optimization.
     I18n.transliterate("#{page_desc} #{web_desc}")
