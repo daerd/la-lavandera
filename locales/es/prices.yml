@@ -9,7 +9,7 @@ es:
       shirts:
         title: Camisas desde <span class="base-color">3€</span>
       laundry:
-        title: Lavanderia desde <span class="base-color">1,60€</span>
+        title: Lavanderia desde <span class="base-color">1,35€ por kg</span>
       delivery:
         title: Servicio a domicilio... <span class="base-color">¡gratis!</span>
         info:  "Pedido mínimo: 20€"
@@ -108,8 +108,12 @@ es:
 
       - title: Lavandería (lavado, secado, empaquetado e IVA incluidos)
         items:
-          - title: Desde 1 kg
-            price: Desde 1,60€
+          - title: 5 kg
+            price: 12€
+          - title: 10 kg
+            price: 16€
+          - title: 15 kg
+            price: 20€
 
       - title: Alfombras (incluye lavado, empaquetado e IVA)
         items:
