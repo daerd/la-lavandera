@@ -1966,11 +1966,6 @@ header .box-location:before {
 }
 
 @media (max-width:767px) {
-  .carousel-blog-box .img {
-    height: 55px;
-    width: 55px;
-  }
-
   .carousel-blog-box .img:before {
     font-size: 36px;
     left: 10px;
@@ -4835,4 +4830,20 @@ div[class^="bubble-"] {
     -webkit-transform: translate3d(-50%,-280px,0);
     width: 75px;
   }
+}
+
+@media (max-width: $screen-xs-max) {
+  .services-box-mobile {
+    .slick-slide {
+      width: 100% !important;
+    }
+  }
+}
+
+.slick-dots li button::before {
+  color: #fff !important;
+}
+
+.slick-dots li.slick-active button::before {
+  color: $color-3 !important;
 }

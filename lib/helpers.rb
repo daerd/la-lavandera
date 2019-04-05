@@ -24,7 +24,7 @@ module Helpers
     link
   end
 
-  def change_locale_links
+  def change_locale_link
     links            = ''
     current_path_key = t('paths').invert[remove_file_extension(current_page.path)]
 

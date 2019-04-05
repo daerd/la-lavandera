@@ -2,6 +2,7 @@ en:
 
   paths:
     contact:           contact
+    deals:             deals
     faq:               frequently-asked-questions
     prices:            prices
     services:          services

@@ -18,7 +18,6 @@ To have both the web and the deploy command working, just create a ".env" file u
 
 ```ruby
 docker-compose up                  # With "--force-recreate" if needed.
-docker-compose run web rake server
 docker-compose run web rake build
 docker-compose run web rake deploy
 ```

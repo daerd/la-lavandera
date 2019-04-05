@@ -81,8 +81,8 @@ $document.ready(function () {
   // sticky header
   $.fn.stickyHeader = function () {
     var $header = this,
-      $body = $('body'),
-      headerOffset;
+        $body   = $('body'),
+        headerOffset;
 
     function setHeigth() {
       $(".fix-space").remove();
@@ -95,26 +95,30 @@ $document.ready(function () {
     var prevWindow = window.innerWidth || $window.width()
 
     $window.on('resize', function () {
-      var currentWindow = window.innerWidth || $window.width();
-      if (currentWindow != prevWindow) {
-        setHeigth()
-        prevWindow = currentWindow;
+      if(window.innerWidth >= 992) {
+        var currentWindow = window.innerWidth || $window.width();
+        if (currentWindow != prevWindow) {
+          setHeigth()
+          prevWindow = currentWindow;
+        }
       }
     });
 
     $window.scroll(function () {
-      var st = getCurrentScroll();
-      if (st > headerOffset) {
-        if (!$(".fix-space").length) {
-          $header.after('<div class="fix-space"></div>');
-          $(".fix-space").css({
-            'height': $header.height() + 'px'
-          });
+      if(window.innerWidth >= 992) {
+        var st = getCurrentScroll();
+        if (st > headerOffset) {
+          if (!$(".fix-space").length) {
+            $header.after('<div class="fix-space hidden-sm hidden-xs"></div>');
+            $(".fix-space").css({
+              'height': $header.height() + 'px'
+            });
+          }
+          $header.addClass('header--sticky animated fadeIn');
+        } else {
+          $(".fix-space").remove();
+          $header.removeClass('animated header--sticky fadeIn');
         }
-        $header.addClass('header--sticky animated fadeIn');
-      } else {
-        $(".fix-space").remove();
-        $header.removeClass('animated header--sticky fadeIn');
       }
     });
 

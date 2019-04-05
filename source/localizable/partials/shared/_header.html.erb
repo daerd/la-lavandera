@@ -8,11 +8,11 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
-        <%= change_locale_links %>
+      <div class="col-sm-12 col-xs-3 pull-right">
+        <%= change_locale_link %>
       </div>
 
-      <div class="col-sm-12 visible-sm visible-xs">
+      <div class="col-sm-12 col-xs-9 visible-sm visible-xs">
         <div class="box-telephone">
           <a href="tel:<%= t('global.phone') %>" class="data">
             <span class="icon icon-telephone"></span> <%= t('global.phone') %>
@@ -35,7 +35,7 @@
       <div class="col-sm-12 col-md-4 col-lg-4 text-center">
         <h1><a class="logo" title="<%= t('global.name') %>" href="<%= link_path('/') %>"><%= image_tag 'logo.png', class: 'img-responsive', alt: t('global.name') %></a></h1>
 
-        <h2 class="slogan"><%= t('global.slogan') %></h2>
+        <h2 class="slogan hidden-xs hidden-sm"><%= t('global.slogan') %></h2>
       </div>
 
       <div class="col-sm-12 col-md-4 col-lg-4 hidden-sm hidden-xs">
