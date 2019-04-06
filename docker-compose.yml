@@ -2,8 +2,20 @@ version: '3'
 
 volumes:
   bundle:
+  node_modules:
+  web:
 
 services:
+
+  bundle:
+    image: busybox:1
+    volumes:
+      - bundle:/bundle
+
+  node_modules:
+    image: busybox:1
+    volumes:
+      - node_modules:/node_modules
 
   web:
     build:    .
@@ -14,9 +26,6 @@ services:
     ports:
       - 4567:4567
     volumes:
-      - bundle:/bundle
-
-  bundle:
-    image: busybox:1
-    volumes:
+      - web:/la_lavandera
+      - node_modules:/la_lavandera/node_modules
       - bundle:/bundle

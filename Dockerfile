@@ -18,12 +18,13 @@ ENV     INSTALL_PATH /la_lavandera
 RUN     mkdir -p $INSTALL_PATH
 WORKDIR $INSTALL_PATH
 
-# Updates the gem system to avoid incompatibilities with the defined Ruby version and installs all the gems.
+# Updates the gem system to avoid incompatibilities with the defined Ruby version and installs all the gems.
 COPY Gemfile Gemfile.lock ./
 RUN  gem update --system && gem install bundler
 RUN  bundle install
 
-COPY . .
-
 # Installs Webpack and all its dependencies.
+COPY package*.json ./
 RUN npm install
+
+COPY . .

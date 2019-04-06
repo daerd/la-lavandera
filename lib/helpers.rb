@@ -13,7 +13,7 @@ module Helpers
 
   def link_path(link)
     unless link == '#'
-      link      = '/'                           if link.to_s == 'home'
+      link      = '/'                           if     link.to_s == 'home'
       extension = get_path_extension(link)
       link      = t("paths.#{link}")            if     link != '/' && I18n.exists?("paths.#{link}")
       link      = "/#{link}"                    unless link[0] == '/'
