@@ -91,8 +91,8 @@ end
 
 # Contact
 page 'send_email.php', layout: false
-config[:contact_email] = 'lalavanderacb@gmail.com'
-config[:errors_email]  = 'lalavanderacb@gmail.com'
+config[:contact_email] = 'info@tintorerialalavandera.com'
+config[:errors_email]  = 'info@tintorerialalavandera.com'
 
 # Google
 config[:google_api_key]      = ENV['GOOGLE_API_KEY']
