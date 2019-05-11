@@ -102,6 +102,7 @@ config[:gmaps_zoom]          = '14'
 config[:gplaces_place_id]    = 'ChIJJZgiAUIvQg0RNuOj8RudPRs'
 config[:gplaces_min_rating]  = 4
 config[:gplaces_max_reviews] = 25
+config[:ga_id]               = 'UA-140028698-1'
 
 # Facebook
 config[:facebook_token]      = ENV['FACEBOOK_TOKEN']

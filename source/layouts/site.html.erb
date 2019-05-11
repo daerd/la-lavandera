@@ -4,6 +4,7 @@
     <%= partial 'partials/shared/meta_tags' %>
     <%= favicon_tag 'images/favicon.ico' %>
     <title><%= page_title %></title>
+    <%= google_analytics %>
     <%= javascript_include_tag 'site' %>
     <%= stylesheet_link_tag 'site' %>
     <%= yield_content :css_tags %>

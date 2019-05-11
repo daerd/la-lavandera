@@ -68,4 +68,15 @@ module Helpers
   def get_path_extension(path)
     config[:php_files].include?(path.to_s) ? 'php' : 'html'
   end
+
+  def google_analytics
+    "<script async src=\"https://www.googletagmanager.com/gtag/js?id=#{config[:ga_id]}\"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', '#{config[:ga_id]}');
+    </script>"
+  end
 end
