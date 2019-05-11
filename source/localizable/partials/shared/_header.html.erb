@@ -14,7 +14,7 @@
 
       <div class="col-sm-12 col-xs-9 visible-sm visible-xs">
         <div class="box-telephone">
-          <a href="tel:<%= t('global.phone') %>" class="data">
+          <a href="tel:<%= t('global.phone').gsub(' ', '') %>" class="data">
             <span class="icon icon-telephone"></span> <%= t('global.phone') %>
           </a>
 
@@ -40,7 +40,7 @@
 
       <div class="col-sm-12 col-md-4 col-lg-4 hidden-sm hidden-xs">
         <div class="box-telephone ">
-          <a href="tel:<%= t('global.phone') %>" class="data">
+          <a href="tel:<%= t('global.phone').gsub(' ', '') %>" class="data">
             <%= t('global.phone') %>
           </a>
 
