@@ -4,7 +4,7 @@ module Helpers
   end
 
   def page_description
-    page_desc = t("page_descriptions.#{current_page.path}.keywords")
+    page_desc = t("page_descriptions.#{current_path_key}.keywords")
     web_desc  = "#{t('page_descriptions.keywords.global')} - #{page_title}"
 
     # Page and global description+keywords, converted to have only alphanumeric chars for SEO optimization.
@@ -25,8 +25,7 @@ module Helpers
   end
 
   def change_locale_link
-    links            = ''
-    current_path_key = t('paths').invert[remove_file_extension(current_page.path)]
+    links = ''
 
     config[:available_locales].each do |new_locale|
       unless new_locale == I18n.locale
@@ -44,6 +43,10 @@ module Helpers
     end
 
     links
+  end
+
+  def current_path_key
+    t('paths').invert[remove_file_extension(current_page.path)]
   end
 
   def nav_link(page, data)

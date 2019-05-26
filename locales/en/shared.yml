@@ -1,6 +1,7 @@
 en:
 
   paths:
+    index:             ''
     contact:           contact
     deals:             deals
     faq:               frequently-asked-questions
