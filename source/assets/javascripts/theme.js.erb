@@ -12,13 +12,20 @@ var $document = $(document),
     menu:                $('nav .menu'),
     footerBubble:        $('.bubbleContainer'),
     animation:           $('.animation'),
+    permissionCarousel:  $('.permission-box-mobile'),
+    blogCarousel:        $('.carousel-blog'),
+    productCarousel:     $('.product-box-mobile'),
+    postCarousel:        $('.post-carousel'),
     servicesCarousel:    $('.services-box-mobile'),
     permissionCarousel:  $('.permission-box-mobile'),
     blogCarousel:        $('.carousel-blog'),
     productCarousel:     $('.product-box-mobile'),
     postCarousel:        $('.post-carousel'),
     postGallery:         $('.blog-isotope'),
-    stickyHeader:        true
+    stickyHeader:        true,
+
+    <% # FIXME: Slick temporarily disabled due to its weird behaviour in mobile devices. %>
+    servicesCarousel:    '', // $('.services-box-mobile')
   }
 
 /* Initialize All Scripts */
@@ -330,12 +337,15 @@ $document.ready(function () {
   $window.on('resize', function () {
     setTimeout(function () {
       var windowWidth = window.innerWidth || $(window).width();
+
       if (windowWidth < 768) {
         slickMobile(plugins.permissionCarousel);
       }
+
       if (windowWidth > 991 && plugins.menu.is(':hidden')) {
         plugins.menu.removeAttr('style');
       }
+
       onScrollInit(plugins.animation, windowWidth);
     }, 500);
   });
