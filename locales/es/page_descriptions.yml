@@ -7,7 +7,6 @@ es:
       global: lavanderia a domicilio, tintoreria en madrid, tintoreria a domicilio, lavanderia en madrid
 
       pages:
-        index:             '' # Empty because the global keywords are enough for this page.
         contact:           telefono, llamar, contactar, contacto
         deals:             ofertas, descuento, planchado, lavado, cupon, codigo
         faq:               como lavar, como limpiar, preguntas frecuentes, dudas tintoreria,

@@ -4,11 +4,11 @@ module Helpers
   end
 
   def page_description
-    page_desc = t("page_descriptions.keywords.pages.#{current_path_key}")
+    page_desc = current_path_key.present? ? (t("page_descriptions.keywords.pages.#{current_path_key}", default: '') + ', ') : ''
     web_desc  = "#{t('page_descriptions.keywords.global')} - #{page_title}"
 
     # Page and global description+keywords, converted to have only alphanumeric chars for SEO optimization.
-    I18n.transliterate("#{page_desc} #{web_desc}")
+    I18n.transliterate("#{page_desc}#{web_desc}")
   end
 
   def link_path(link)

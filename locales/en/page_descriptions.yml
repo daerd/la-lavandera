@@ -7,7 +7,6 @@ en:
       global: laundry, delivery madrid
 
       pages:
-        index:             '' # Empty because the global keywords are enough for this page.
         contact:           contact
         deals:             deals
         faq:               faq
