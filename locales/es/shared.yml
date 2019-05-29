@@ -1,7 +1,7 @@
 es:
 
   paths:
-    index:             ''
+    index:             index
     contact:           contacto
     deals:             ofertas
     faq:               preguntas-frecuentes
