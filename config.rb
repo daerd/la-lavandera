@@ -26,8 +26,13 @@ config[:images_dir] = 'assets/images'
 ### DEVELOPMENT ###
 
 configure :development do
-  activate :livereload
+  host = ENV['VIRTUAL_HOST'].present? ? ENV['VIRTUAL_HOST'] : '127.0.0.1'
 
+  activate :livereload, js_host: host, js_port: 35729
+
+  config[:protocol]              = 'http'
+  config[:host]                  = host
+  config[:port]                  = 4567
   config[:debug_assets]          = true
   config[:livereload_css_target] = nil
   config[:php_files]             = []

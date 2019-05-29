@@ -24,7 +24,7 @@ RUN  gem update --system && gem install bundler
 RUN  bundle install
 
 # Installs Webpack and all its dependencies.
-COPY package*.json ./
+COPY package.json package-lock.json ./
 RUN npm install
 
 COPY . .
