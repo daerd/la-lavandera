@@ -1,32 +1,20 @@
 version: '3'
 
 volumes:
+
   bundle:
   node_modules:
-  web:
 
 services:
-
-  bundle:
-    image: busybox:1
-    volumes:
-      - bundle:/bundle
-
-  node_modules:
-    image: busybox:1
-    volumes:
-      - node_modules:/node_modules
 
   web:
     build:    .
     env_file: .env
     command:  rake server
-    depends_on:
-      - bundle
     ports:
       - 4567:4567
       - 35729:35729
     volumes:
-      - web:/la_lavandera
+      - .:/la_lavandera
       - node_modules:/la_lavandera/node_modules
       - bundle:/bundle
