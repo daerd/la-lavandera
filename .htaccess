@@ -1,11 +1,16 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{HTTPS} off
+
   # First rewrite to HTTPS:
   # Don't put "www". here. If it is already there it will be included, if not the subsequent rule will catch it.
   RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-  # Now, rewrite any request to the wrong domain to use "www".
-  # [NC] is a case-insensitive match
+
+  # Now, rewrite any request to the wrong domain to use "www". "[NC]" makes it case-insensitive.
   RewriteCond %{HTTP_HOST} !^www\. [NC]
   RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # "/index.php" always to root.
+  RewriteCond %{THE_REQUEST} ^.*/index.php
+  RewriteRule ^(.*)index.php$ https://%{HTTP_HOST} [R=301,L]
 </IfModule>
