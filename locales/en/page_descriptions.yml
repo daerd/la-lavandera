@@ -11,7 +11,7 @@ en:
         deals:             deals
         faq:               faq
         prices:            prices
-        services:          '' # Empty since the page has a "noindex" directive.
+        services:          dry cleaning, ironing, laundry, carpets, linen, leather, suede
         dry_cleaning:      dry cleaning
         ironing:           ironing
         laundry:           laundry

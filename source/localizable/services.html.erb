@@ -4,14 +4,6 @@ breadcrumbs:
   - navigation.services.text
 ---
 
-<% content_for :meta_tags do %>
-  <% # To avoid any SEO penalfy for having the same content as every service page. %>
-  <%
-      # Temporarily disabled as we're testing Google's response without it.
-      # <meta name="robots" content="noindex" />
-  %>
-<% end %>
-
 <div class="page-content">
   <div class="container">
     <h3 class="title-underline"><%= t('services.title') %></h3>

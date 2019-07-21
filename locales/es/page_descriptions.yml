@@ -11,7 +11,7 @@ es:
         deals:             ofertas, descuento, planchado, lavado, cupon, codigo
         faq:               como lavar, como limpiar, preguntas frecuentes, dudas tintoreria,
         prices:            precios tintoreria, tarifas, precio lavar, precio limpiar, precio planchar
-        services:          '' # Empty since the page has a "noindex" directive.
+        services:          limpieza en seco, planchado, lavanderia, alfombras, sabanas, cuero, pieles
         dry_cleaning:      limpieza en seco, lavado en seco, tintoreria en seco, lavanderia en seco, lavar en seco
         ironing:           planchado, plancha, planchar ropa, servicio planchado, como planchar
         laundry:           lavanderia, lavar ropa, lavado, como lavar, como limpiar
