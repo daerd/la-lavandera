@@ -1,32 +1,72 @@
-#home_delivery {
-  background: #f5f5f5;
-  margin: 25px 0;
-}
-
-.slick-dots {
-  background: #dddddd;
-  padding: 5px;
-}
-
-.services-box {
-  min-height: 390px;
-  min-width: 370px;
-
-  @include media-xs {
-    min-width: auto;
+body.index {
+  .title-underline {
+    font-size: 1.8em;
+    text-transform: uppercase;
   }
-}
 
-.permission-box {
-  .description {
-    h4 {
-      margin: 40px 0 5px 0;
+  .slick-dots {
+    background: #dddddd;
+    padding: 5px;
+  }
+
+  #steps {
+    #home-delivery {
+      background: #f5f5f5;
+      margin: 25px 0;
+
+      .description {
+        font-size: 1.2em;
+        text-transform: none;
+        line-height: 0;
+      }
+
+      .title {
+        line-height: 1.2em;
+        font-size: 1.7em;
+      }
     }
   }
-}
 
-.google-review {
-  .title {
-    font-size: 1.5em;
+  #featured_2 {
+    .services-box {
+      min-height: 390px;
+      min-width: 370px;
+
+      @include media-xs {
+        min-width: auto;
+      }
+    }
+  }
+
+  #services {
+    margin-top: 55px;
+    margin-bottom: 55px;
+
+    .btn {
+      width: 100%;
+      margin-top: 10px;
+
+      h4 {
+        font-size: 1.2em;
+        margin: 0;
+      }
+    }
+  }
+
+  #choose_us {
+    .permission-box {
+      height: 100px;
+
+      .title {
+        padding: 0;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .google-review {
+    .title {
+      font-size: 1.5em;
+    }
   }
 }

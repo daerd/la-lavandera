@@ -38,7 +38,7 @@ es:
 
       item_3:
         title: ¿No tienes sitio?
-        text:  Limpiamos tu alfombra y te la guardamos durante el tiempo que no la utilices. También ofrecemos servicio de almacenaje para edredones. Consulta disponibilidad.
+        text:  Limpiamos tus alfombras y edredones y te los guardamos durante el tiempo que no la utilices. Consulta disponibilidad.
 
     choose_us:
 
@@ -69,6 +69,17 @@ es:
         title: Control de pedido
         text:  Te mantendremos siempre informado del estado de tu pedido y te avisaremos cuando tus prendas estén listas.
 
+    services:
+
+      title:  Servicios de tintorería y lavandería
+
+      item_1: Limpieza en seco
+      item_2: Planchado
+      item_3: Lavandería
+      item_4: Alfombras
+      item_5: Ropa de hogar
+      item_6: Lavado de pieles
+
     steps:
 
       title: Cómo funciona en 4 sencillos pasos
@@ -87,7 +98,7 @@ es:
 
       item_4:
         title: Paso 4
-        text:  Te la <span>entregamos</span> limpia, planchada y lista para usar.
+        text:  <span>Entregamos</span> tu ropa limpia, planchada y lista para usar.
 
     mission:
 

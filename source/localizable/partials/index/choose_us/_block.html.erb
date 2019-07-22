@@ -1,5 +1,5 @@
-<div class="container">
-  <h3 class="title-underline"><%= t('index.choose_us.title') %></h3>
+<div id="choose_us" class="container">
+  <div class="title-underline"><%= t('index.choose_us.title') %></div>
 
   <div class="row permission-box-mobile arrow-on-white">
     <%
@@ -18,7 +18,7 @@
 
   <div class="row">
     <div class="col-md-12">
-      <div class="text-center offset-top35"><a href="<%= link_path('prices') %>" class="btn btn-default btn-green"><%= t("index.choose_us.prices") %></a></div>
+      <div class="text-center offset-top35"><a href="<%= link_path(:prices) %>" class="btn btn-default"><%= t("index.choose_us.prices") %></a></div>
     </div>
   </div>
 </div>

@@ -13,11 +13,11 @@
         <%= t("services.items.#{service}.text").html_safe %>
 
         <div class="text-center">
-          <a href="<%= link_path('prices') %>" class="contact-service btn btn-default btn-green btn-lg">
+          <a href="<%= link_path(:prices) %>" class="contact-service btn btn-default btn-lg">
             <%= t('navigation.prices.text') %>
           </a>
 
-          <a href="<%= link_path('contact') %>" class="contact-service btn btn-default btn-green btn-lg">
+          <a href="<%= link_path(:contact) %>" class="contact-service btn btn-default btn-lg">
             <%= t('services.contact') %>
           </a>
         </div>

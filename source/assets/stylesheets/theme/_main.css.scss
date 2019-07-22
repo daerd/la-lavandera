@@ -186,40 +186,40 @@ h3.h-sm {
   line-height: 36px;
 }
 
-h3.title-underline {
-  padding: 0 0 77px 0;
+.title-underline {
+  padding: 0 0 60px 0;
   text-align: center;
 }
 
-h3.title-underline:after {
+.title-underline:after {
   background: $color-3;
   content: '';
   display: block;
   height: 3px;
   left: 50%;
   margin-left: -37px;
-  margin-top: 40px;
+  margin-top: 25px;
   position: absolute;
   width: 75px;
 }
 
 @media (max-width:577px) {
-  h3.title-underline {
+  .title-underline {
     font-size: 24px;
     line-height: 27px;
     padding: 0 0 60px 0;
   }
 
-  h3.title-underline:after {
+  .title-underline:after {
     margin-top: 24px;
   }
 }
 
-h3.title-underline.text-left {
+.title-underline.text-left {
   text-align: left;
 }
 
-h3.title-underline.text-right {
+.title-underline.text-right {
   text-align: right;
 }
 
@@ -2128,7 +2128,7 @@ header .box-location:before {
   display: block;
   margin-bottom: 40px;
   position: relative;
-  height: 150px;
+  height: 170px;
 }
 
 .permission-box .icon {
@@ -2646,7 +2646,7 @@ textarea.form-control {
 }
 
 .btn-default:hover, .btn-default:focus:hover, .btn-default:visited:hover {
-  background: #000;
+  background: $color-2;
   color: #fff;
 }
 
@@ -2655,7 +2655,7 @@ textarea.form-control {
 }
 
 .btn-default.btn-blue:hover, .btn-default.btn-blue:focus:hover {
-  background: #000;
+  background: $color-2;
   color: #fff;
 }
 
@@ -2687,7 +2687,7 @@ textarea.form-control {
 }
 
 .btn-default.btn-grey:hover, .btn-default.btn-grey:focus:hover {
-  background: #000;
+  background: $color-2;
   color: #fff;
 }
 

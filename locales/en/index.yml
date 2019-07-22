@@ -69,6 +69,17 @@ en:
         title: Order status
         text:  We will always keep you informed of the status of your order and will let you know when your clothes are ready.
 
+    services:
+
+      title:  Laundry services
+
+      item_1: Dry cleaning
+      item_2: Ironing
+      item_3: Laundry
+      item_4: Carpets
+      item_5: Linen
+      item_6: Leather cleaning
+
     steps:
 
       title: How it works in 4 easy steps

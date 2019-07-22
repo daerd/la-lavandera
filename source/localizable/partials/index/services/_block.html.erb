@@ -1,0 +1,18 @@
+<div id="services" class="container">
+  <div class="title-underline"><%= t('index.services.title') %></div>
+
+  <div class="row permission-box-mobile arrow-on-white">
+    <%
+      {
+        item_1: link_path(:dry_cleaning),
+        item_2: link_path(:ironing),
+        item_3: link_path(:laundry),
+        item_4: link_path(:carpets),
+        item_5: link_path(:linen),
+        item_6: link_path(:leather_and_suede)
+      }.each do |text_key, link|
+    %>
+      <%= partial 'partials/index/services/service', locals: { text_key: text_key, link: link } %>
+    <% end %>
+  </div>
+</div>

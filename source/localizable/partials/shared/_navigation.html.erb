@@ -10,7 +10,7 @@
           <ul class="menu">
             <% t('navigation').each do |page,data| %>
               <li>
-                <%= nav_link(page,data) %>
+                <%= nav_link(page, data) %>
                 <% if data[:items].present? %>
                   <ul>
                     <% data[:items].each do |page,text| %>
