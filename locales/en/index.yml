@@ -86,19 +86,19 @@ en:
 
       item_1:
         title: Step 1
-        text:  <span>Prepare </span> your dirty laundry and call us at <span>%{phone}</span>.
+        text:  Prepare your dirty laundry and call us at %{phone}.
 
       item_2:
         title: Step 2
-        text:  <span>We pick up </span> your clothes.
+        text:  We pick up your clothes.
 
       item_3:
         title: Step 3
-        text:  <span>We clean </span>your clothes.
+        text:  We clean your clothes.
 
       item_4:
         title: Step 4
-        text:  We <span>deliver </span> them clean, ironed and ready to use.
+        text:  We deliver them clean, ironed and ready to use.
 
     mission:
 
