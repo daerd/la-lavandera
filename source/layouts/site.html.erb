@@ -10,7 +10,7 @@
     <%= yield_content :css_tags %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="<%= current_page.data.body_class %>">
     <%= partial 'partials/shared/header' %>
 
     <%= partial 'partials/shared/breadcrumbs', locals: { breadcrumbs: current_page.data.breadcrumbs } %>

@@ -103,15 +103,25 @@ es:
       delivery:
         title: A domicilio
         text: |
+          <p>Si eres de Madrid Capital y tienes mucha colada pero poco tiempo que dedicarle, ¡somos tu solución!</p>
+          <p>En La Lavandera te ofrecemos multitud de ventajas para que hacer la colada pase a ser cosa nuestra y tú puedas disfrutar de tu tiempo libre.</p>
           <h4 class="inline-title">¿Cómo funciona?</h4>
-          <p>Olvídate de ir de arriba para abajo con un saco de ropa sucia... ¡Nosotros vamos a donde tú estés!</p>
           <ol>
-            <li>Llámanos: dinos el sitio y la hora a la que quieres que vayamos a buscar la ropa.</li>
-            <li>Recogida: nos llevamos la ropa y te damos una fecha de entrega.</li>
-            <li>Entrega: te llamamos para confirmar el lugar y la hora de entrega (¿en casa o en el trabajo? tú eliges).</li>
+            <li>Llámanos: estamos disponibles en el <strong>%{phone}</strong> para concertar una cita. Dinos el sitio y la hora a la que quieres que vayamos a buscar el pedido.</li>
+            <li>Recogida: nos llevamos tu pedido en nuestras sacas y te facilitamos un resguardo.</li>
+            <li>Entrega: cuando esté todo listo nosotros te llamamos para concertar un día de entrega. Tú eliges dónde. Sencillo, ¿verdad?</li>
           </ol>
-          <p>La Lavandera siempre cerca: nos encargamos de todo, para que tú no tengas que preocuparte de nada.</p>
-          <p>* Servicio gratuito para pedidos a partir de 20 euros.</p>
+          <h4 class="inline-title">¿Qué debes saber?</h4>
+          <ol>
+            <li>Ofrecemos <strong>servicio a domicilio gratuito</strong> de recogida y entrega en Madrid Capital.</li>
+            <li>El <strong>pedido mínim</strong>o son <strong>20€</strong> para poder disfrutar de este servicio.</li>
+            <li>Si tu pedido no llega a este importe mínimo podrás disfrutar de este servicio abonando la diferencia, ¡no hay problema!</li>
+            <li>El <strong>servicio a domicilio</strong> aplica a todos los servicios (<strong>lavandería, tintorería, pieles, alfombras...</strong>).</li>
+            <li>El proceso se realiza aproximadamente en 48 horas, por lo que volverás a tener lista tu ropa favorita para el fin de semana.</li>
+            <li>Si tienes mucha urgencia con una prenda especial, no te preocupes: ¡tenemos servicio exprés! Tan solo tienes que consultarnos.</li>
+          </ol>
+          <p>Tenemos servicio de <strong>limpieza en seco</strong> (desmanchado, lavado, planchado, emperchado o empaquetado), <strong>lavandería</strong> (lavado, secado y empaquetado), <strong>alfombras</strong> (incluye lavado y empaquetado y si quieres te la guardamos hasta la próxima temporada sin coste extra), <strong>ropa de hogar</strong> (desmanchado, lavado, planchado, emperchado o empaquetado), <strong>limpieza de pieles</strong> con tratamiento completo, <strong>packs de planchado</strong>... en definitiva, todos los servicios a tu alcance.</p>
+          <p>La Lavandera siempre cerca: nos encargamos de todo para que tú no tengas que preocuparte de nada.</p>
 
       professionals:
         title: Profesionales y empresas

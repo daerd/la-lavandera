@@ -10,9 +10,9 @@
 
         <div class="divider divider-47"></div>
 
-        <%= t("services.items.#{service}.text").html_safe %>
+        <%= t("services.items.#{service}.text", phone: t('global.phone')).html_safe %>
 
-        <div class="text-center">
+        <div class="options text-center">
           <a href="<%= link_path(:prices) %>" class="contact-service btn btn-default btn-lg">
             <%= t('navigation.prices.text') %>
           </a>

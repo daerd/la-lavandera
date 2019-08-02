@@ -96,15 +96,25 @@ en:
       delivery:
         title: Home delivery
         text: |
-            <h4 class="inline-title">How does it work?</h4>
-            <p>Forget going up and down with a bag of dirty clothes... We go where you are!</p>>
-            <ol>
-              <li>Call us: tell us where and when you want us to go get the clothes.</li>
-              <li>Collection: we pick up the clothes and give you a delivery date.</li>
-              <li>Delivery: we call you to confirm where and when you want the delivery (at home or at work? It's up to you!).</li>
-            </ol>
-            <p>La Lavandera is always close: we take care of everything, so you don't have to worry about anything.</p>
-            <p>* Free delivery for orders over 20 euros.</p>
+          <p>If you live in Madrid and you have a lot of laundry but little time, we are your solution!</p>
+          <p>In La Lavandera we offer you many advantages so that doing laundry becomes our thing and you can enjoy your free time.</p>
+          <h4 class="inline-title">How does it work?</h4>
+          <ol>
+            <li>Call us: We are available at <strong>%{phone}</strong> to make an appointment. Tell us where and when you want us to go get the clothes.</li>
+            <li>Collection: We take your order in our sacks and provide you with a receipt.</li>
+            <li>Delivery: We call you to confirm where and when you want the delivery (at home or at work? It's up to you!). Simple, isn't it?</li>
+          </ol>
+          <h4 class="inline-title">What should you know?</h4>
+          <ol>
+            <li>We offer <strong>free home delivery service</strong> in Madrid.</li>
+            <li>The <strong>minimum order</strong>o is <strong>20€</strong> to enjoy this service.</li>
+            <li>If your order does not reach this minimum amount, you can enjoy this service by paying the difference, no problem!</li>
+            <li>The <strong>home delivery</strong> applies to all services (<strong> laundry, dry cleaning, leather, carpets...</strong>).</li>
+            <li>The process takes approximately 48 hours, so you'll have your favorite clothes ready for the weekend.</li>
+            <li>If you have an urgency with a special garment, don't worry: we have express service! All you have to do is ask us.</li>
+          </ol>
+          <p>Our services include <strong>dry cleaning</strong> (stain removal, washing, ironing and packaging), <strong>laundry</strong> (washing, drying and packaging), <strong>rugs</strong> (includes washing and packaging and if you want to we can keep them until the next season at no extra cost), <strong>household clothing</strong> (stain removal, washing, ironing and packaging> (washing, washing, ironing and packaging), <strong>leather, suede and other furs</strong>,... all the services you may need.</p>
+          <p>La Lavandera is always close: we take care of everything, so that you don't have to worry about anything.</p>
       professionals:
         title: Professionals and companies
         text: |

@@ -4,6 +4,7 @@
 	begin
 		current_page.data.title       = "navigation.services.items.#{service}"
 		current_page.data.breadcrumbs = [ 'navigation.services.text', "navigation.services.items.#{service}" ]
+		current_page.data.body_class  = "service #{service}"
 %>
 
 	<%= partial 'partials/services/service', locals: { service: service } %>
